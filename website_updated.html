@@ -1,0 +1,3701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Township Capital — Rajgir, Bihta & Ekma, Bihar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --navy: #111238;
+      --navy-soft: #1b1d4a;
+      --cream: #F7F2E7;
+      --cream-deep: #EFE7D6;
+      --gold: #D4AF37;
+      --gold-soft: #e8cd7a;
+      --stone: #a05a2c;
+      --sage: #5b7a5e;
+      --ink: #1c1c22;
+      --line: rgba(212, 175, 55, 0.25);
+      --serif: 'Fraunces', Georgia, serif;
+      --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .eyebrow.on-light {
+      color: var(--stone);
+    }
+
+    .eyebrow.on-light::before {
+      background: var(--stone);
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+    }
+
+    em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .on-light em {
+      color: var(--stone);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 15px;
+      padding: 15px 26px;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-gold:hover {
+      box-shadow: 0 10px 24px rgba(212, 175, 55, 0.35);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: #fff;
+    }
+
+    .btn-outline.on-light {
+      border-color: rgba(28, 28, 34, 0.25);
+      color: var(--ink);
+    }
+
+    /* ===== NAV ===== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(17, 18, 56, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      width: 100%;
+      max-width: 1200px;
+      height: 76px;
+      margin: 0 auto;
+      padding: 0 28px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 32px;
+      position: relative;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      flex: none;
+    }
+
+    .logo-mark::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    .logo-text {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      line-height: 1.3;
+      white-space: nowrap;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      font-size: 13px;
+      color: #cfd0e6;
+      white-space: nowrap;
+    }
+
+    .navlinks a {
+      text-decoration: none;
+      white-space: nowrap;
+      transition: color .2s ease;
+    }
+
+    .navlinks a:hover {
+      color: var(--gold-soft);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 19px !important;
+      font-size: 12.5px !important;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .nav-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      background: transparent;
+      cursor: pointer;
+      flex: none;
+      gap: 4px;
+      flex-direction: column;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 18px;
+      height: 2px;
+      background: var(--gold-soft);
+      border-radius: 2px;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+
+    @media(max-width:899px) {
+      nav {
+        height: 70px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .navlinks {
+        display: none;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .nav-toggle {
+        display: inline-flex;
+      }
+    }
+
+    .navlinks.mobile-open {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      gap: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #111238;
+      border-bottom: 1px solid var(--line);
+      padding: 8px 20px 18px;
+    }
+
+    .navlinks.mobile-open a {
+      padding: 13px 4px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+      color: #e8e6f2;
+    }
+
+    .navlinks.mobile-open a:last-child {
+      border-bottom: none;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: var(--navy);
+      color: #fff;
+      padding: 76px 0 64px;
+    }
+
+    .hero-hills {
+      position: absolute;
+      inset: 0;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .hero-hills svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 64px);
+      max-width: 760px;
+      color: #F7F2E7;
+    }
+
+    .hero p.lede {
+      margin-top: 22px;
+      max-width: 560px;
+      font-size: 17px;
+      color: #c7c8de;
+      line-height: 1.65;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .hero-stats {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    @media(min-width:720px) {
+      .hero-stats {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .hero-stat {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 22px 20px;
+    }
+
+    .hero-stat .num {
+      font-family: var(--serif);
+      font-size: 24px;
+      color: var(--gold-soft);
+    }
+
+    .hero-stat .lab {
+      font-size: 12px;
+      color: #9d9fc0;
+      margin-top: 4px;
+    }
+
+    .disclaimer-tag {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 11px;
+      color: #8f91b3;
+      border: 1px solid var(--line);
+      padding: 6px 12px;
+      border-radius: 100px;
+    }
+
+    /* ===== hero launch banner (new project callout) ===== */
+    .hero-launch-banner {
+      margin-top: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      background: rgba(91, 122, 94, 0.14);
+      border: 1px solid rgba(91, 122, 94, 0.4);
+      border-radius: 100px;
+      padding: 12px 12px 12px 22px;
+    }
+
+    .hero-launch-banner .hlb-text {
+      font-size: 13.5px;
+      color: #e8e6f2;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .hlb-pill {
+      background: var(--sage);
+      color: #fff;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 100px;
+      flex: none;
+    }
+
+    .hero-launch-banner .btn {
+      padding: 10px 18px;
+      font-size: 13px;
+      flex: none;
+    }
+
+    /* ===== SECTION shells ===== */
+    section {
+      padding: 72px 0;
+    }
+
+    .section-dark {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .section-cream {
+      background: var(--cream);
+    }
+
+    .section-deep {
+      background: var(--cream-deep);
+    }
+
+    .head-row {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+
+    .head-row h2 {
+      font-size: clamp(28px, 4vw, 40px);
+    }
+
+    .head-row p {
+      max-width: 600px;
+      color: inherit;
+      opacity: 0.72;
+      font-size: 15.5px;
+    }
+
+
+    /* ===== TOP 5 FEATURES ===== */
+    .top5-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    @media(min-width:640px) {
+      .top5-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(min-width:980px) {
+      .top5-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+
+    .top5-card {
+      position: relative;
+      background: #fff;
+      border: 1px solid rgba(17, 18, 56, .09);
+      border-radius: 18px;
+      padding: 24px 20px;
+      overflow: hidden;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+
+    .top5-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), var(--stone));
+    }
+
+    .top5-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 36px rgba(17, 18, 56, .10);
+      border-color: rgba(212, 175, 55, .35);
+    }
+
+    .top5-number {
+      font-family: var(--serif);
+      font-size: 13px;
+      color: var(--stone);
+      letter-spacing: .08em;
+      font-weight: 700;
+    }
+
+    .top5-icon {
+      width: 48px;
+      height: 48px;
+      margin: 16px 0;
+      border-radius: 14px;
+      background: #fbf3d9;
+      border: 1px solid rgba(212, 175, 55, .28);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+
+    .top5-card h3 {
+      font-size: 18px;
+      margin-bottom: 9px;
+    }
+
+    .top5-card p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #666875;
+    }
+
+    .top5-proof {
+      margin-top: 14px;
+      font-size: 11px;
+      color: #7a6a35;
+      font-weight: 700;
+      letter-spacing: .03em;
+    }
+
+    /* ===== PROJECTS ===== */
+    .project-grid {
+      display: grid;
+      gap: 22px;
+      grid-template-columns: 1fr;
+    }
+
+    @media(min-width:760px) {
+      .project-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .project-card {
+      border-radius: 18px;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid rgba(17, 18, 56, 0.08);
+      text-decoration: none;
+      color: inherit;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(17, 18, 56, 0.12);
+    }
+
+    .project-photo {
+      height: 220px;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 18px;
+    }
+
+    .project-photo.rajgir {
+      background: linear-gradient(160deg, #3c5a44, #111238);
+    }
+
+    .project-photo.bihta {
+      background: linear-gradient(160deg, #8a5a3a, #2a1f3a);
+    }
+
+    .project-photo.harmony {
+      background: linear-gradient(160deg, #1d3a2a, #0e2a1d);
+    }
+
+    .tag-pill {
+      background: #F7F2E7;
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 7px 14px;
+      border-radius: 100px;
+    }
+
+    .project-loc {
+      align-self: flex-end;
+      color: #fff;
+      font-size: 14px;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      margin-top: auto;
+    }
+
+    .project-body {
+      padding: 22px;
+    }
+
+    .project-body .kicker {
+      font-size: 12.5px;
+      color: #8a8a99;
+      margin-bottom: 4px;
+    }
+
+    .project-body h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .project-infra {
+      list-style: none;
+      font-size: 13px;
+      color: #5a5a66;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-bottom: 14px;
+    }
+
+    .project-infra li::before {
+      content: '— ';
+      color: var(--stone);
+    }
+
+    .project-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #eee;
+      padding-top: 14px;
+      margin-top: 14px;
+    }
+
+    .price {
+      font-family: var(--serif);
+      font-size: 18px;
+    }
+
+    .specs {
+      font-size: 13px;
+      color: #7a7a86;
+    }
+
+    /* project card CTA row (Enquire + WhatsApp) */
+    .project-cta-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    .project-cta-row a {
+      flex: 1;
+      min-width: 120px;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 11px 12px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .enquire-btn {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .wa-btn {
+      background: #25D366;
+      color: #0b3d1f;
+    }
+
+    .wa-btn:hover,
+    .enquire-btn:hover {
+      filter: brightness(1.06);
+    }
+
+    /* ===== PRICING TABLE ===== */
+    .horizon-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: flex-end;
+      background: #fff;
+      border: 1px solid rgba(17, 18, 56, 0.08);
+      border-radius: 18px;
+      padding: 22px 24px;
+      margin-bottom: 28px;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .control-group .cg-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #7a7a86;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .chip-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      padding: 9px 16px;
+      border-radius: 100px;
+      border: 1px solid #e2ddca;
+      background: #fbf9f3;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    .chip.active {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+
+    .chip.gold-active.active {
+      background: var(--stone);
+      border-color: var(--stone);
+    }
+
+    .price-block {
+      margin-bottom: 36px;
+    }
+
+    .price-block-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .price-block-head h3 {
+      font-size: 20px;
+    }
+
+    .price-block-head .rate-tag {
+      font-size: 13px;
+      color: #7a7a86;
+    }
+
+    .price-table-wrap {
+      background: #fff;
+      border-radius: 18px;
+      border: 1px solid rgba(17, 18, 56, 0.08);
+      overflow: hidden;
+    }
+
+    table.price-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+    }
+
+    table.price-table th {
+      text-align: left;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #8a8a96;
+      font-weight: 600;
+      padding: 14px 16px;
+      background: #fbf9f3;
+      border-bottom: 1px solid #eee7d4;
+    }
+
+    table.price-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #f2ede0;
+      vertical-align: middle;
+    }
+
+    table.price-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    table.price-table td.num {
+      font-family: var(--serif);
+      font-size: 14.5px;
+    }
+
+    .profit-badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 100px;
+      background: rgba(91, 122, 94, 0.14);
+      color: var(--sage);
+    }
+
+    .price-table-note {
+      font-size: 12px;
+      color: #8a8a96;
+      padding: 14px 16px;
+      background: #fbf9f3;
+      border-top: 1px solid #eee7d4;
+    }
+
+    /* ===== COMPARE ===== */
+    .compare-toggle {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .toggle-btn {
+      padding: 10px 18px;
+      border-radius: 100px;
+      border: 1px solid rgba(17, 18, 56, 0.18);
+      background: transparent;
+      font-family: var(--sans);
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    .toggle-btn.active {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+
+    .compare-panel {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px 24px;
+      border: 1px solid rgba(17, 18, 56, 0.08);
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      gap: 16px;
+      align-items: center;
+      padding: 12px 0;
+    }
+
+    .bar-row+.bar-row {
+      border-top: 1px solid #f0ece0;
+    }
+
+    .bar-label {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .bar-label .sub {
+      display: block;
+      font-size: 11.5px;
+      font-weight: 400;
+      color: #8a8a96;
+    }
+
+    .bar-track {
+      height: 14px;
+      background: #f1ede1;
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 100px;
+      background: linear-gradient(90deg, var(--gold), var(--stone));
+    }
+
+    .bar-value {
+      font-family: var(--serif);
+      font-size: 15px;
+      white-space: nowrap;
+    }
+
+    .change-pill {
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 100px;
+      margin-left: 8px;
+    }
+
+    .change-up {
+      background: rgba(91, 122, 94, 0.15);
+      color: var(--sage);
+    }
+
+    .verified-pill {
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 100px;
+      margin-left: 6px;
+      background: rgba(212, 175, 55, 0.18);
+      color: var(--stone);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* ===== TRENDS ===== */
+    .trend-wrap {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px 22px 18px;
+      border: 1px solid rgba(17, 18, 56, 0.08);
+    }
+
+    .trend-legend {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: #5a5a66;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+    }
+
+    svg.trend-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .trend-note {
+      font-size: 12.5px;
+      color: #8a8a96;
+      margin-top: 14px;
+    }
+
+    /* ===== NEWS ===== */
+    .news-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .news-item {
+      display: grid;
+      grid-template-columns: 90px 1fr auto;
+      gap: 20px;
+      align-items: start;
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .news-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .news-date {
+      font-size: 12px;
+      color: var(--gold-soft);
+      font-family: var(--sans);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .news-tag {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--stone);
+      background: rgba(212, 175, 55, 0.12);
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 100px;
+      margin-bottom: 8px;
+    }
+
+    .news-item h3 {
+      font-size: 19px;
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .news-item p {
+      font-size: 14px;
+      color: #a9aac6;
+      max-width: 580px;
+    }
+
+    .news-arrow {
+      color: var(--gold-soft);
+      font-size: 20px;
+      align-self: center;
+    }
+
+    /* ===== CALCULATOR ===== */
+    .calc-grid {
+      display: grid;
+      gap: 28px;
+      grid-template-columns: 1fr;
+    }
+
+    @media(min-width:860px) {
+      .calc-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .calc-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px;
+      border: 1px solid rgba(17, 18, 56, 0.08);
+    }
+
+    .field {
+      margin-bottom: 20px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #44444e;
+    }
+
+    .field-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      padding: 13px 14px;
+      border-radius: 10px;
+      border: 1px solid #e2ddca;
+      font-family: var(--sans);
+      font-size: 15px;
+      background: #fbf9f3;
+      color: var(--ink);
+    }
+
+    .field input:focus,
+    .field select:focus {
+      outline: 2px solid var(--gold);
+      outline-offset: 1px;
+    }
+
+    .unit-select {
+      max-width: 120px;
+      flex: none;
+    }
+
+    .scenario-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .scenario-chip {
+      flex: 1;
+      min-width: 100px;
+      text-align: center;
+      padding: 10px 8px;
+      border-radius: 10px;
+      border: 1px solid #e2ddca;
+      background: #fbf9f3;
+      cursor: pointer;
+      font-size: 12.5px;
+      font-weight: 600;
+    }
+
+    .scenario-chip.active {
+      border-color: var(--stone);
+      background: rgba(160, 90, 44, 0.08);
+      color: var(--stone);
+    }
+
+    .result-card {
+      background: var(--navy);
+      color: #fff;
+      border-radius: 20px;
+      padding: 30px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .result-top .lab {
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+    }
+
+    .result-top .figure {
+      font-family: var(--serif);
+      font-size: 40px;
+      margin-top: 8px;
+      color: #F7F2E7;
+    }
+
+    .result-top .sub {
+      font-size: 13.5px;
+      color: #a9aac6;
+      margin-top: 8px;
+    }
+
+    .result-top .profit-line {
+      margin-top: 14px;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 100px;
+      background: rgba(91, 122, 94, 0.22);
+      color: #a9e0ad;
+    }
+
+    .result-breakdown {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .result-breakdown .row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13.5px;
+      padding: 10px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .result-note {
+      font-size: 11.5px;
+      color: #8f91b3;
+      margin-top: 20px;
+      line-height: 1.5;
+    }
+
+    /* ===== INVESTMENT TOOL (Land vs Stock Market) ===== */
+    .invest-tool {
+      margin-top: 40px;
+      background: #171938;
+      border: 1px solid rgba(212, 175, 55, 0.18);
+      border-radius: 20px;
+      padding: 28px 24px;
+    }
+
+    .invest-tool>h3 {
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .invest-tool>p {
+      color: #a9aac6;
+      font-size: 14px;
+      margin-bottom: 26px;
+      max-width: 560px;
+      line-height: 1.6;
+    }
+
+    .invest-grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: 1fr;
+      margin-bottom: 26px;
+    }
+
+    @media(min-width:860px) {
+      .invest-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .invest-field {
+      margin-bottom: 18px;
+    }
+
+    .invest-field:last-child {
+      margin-bottom: 0;
+    }
+
+    .invest-field label {
+      display: block;
+      font-size: 12.5px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #a9aac6;
+      letter-spacing: 0.02em;
+    }
+
+    .invest-field input {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      font-family: var(--sans);
+      font-size: 15px;
+      background: #1e2049;
+      color: #F7F2E7;
+    }
+
+    .invest-field input:focus {
+      outline: 2px solid var(--gold);
+      outline-offset: 1px;
+    }
+
+    .invest-chip-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .invest-chip {
+      padding: 8px 14px;
+      border-radius: 100px;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      background: #1e2049;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #c7c8de;
+    }
+
+    .invest-chip.active-land {
+      background: var(--stone);
+      border-color: var(--stone);
+      color: #fff;
+    }
+
+    .invest-chip.active-stock {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--navy);
+    }
+
+    .invest-results {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+
+    @media(min-width:640px) {
+      .invest-results {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .invest-result-card {
+      border-radius: 16px;
+      padding: 22px;
+      background: #1e2049;
+      border: 1px solid rgba(212, 175, 55, 0.12);
+      transition: border-color .18s ease, background .18s ease;
+    }
+
+    .invest-result-card.leader {
+      border-color: var(--gold);
+      background: rgba(212, 175, 55, 0.1);
+    }
+
+    .invest-result-card .ir-lab {
+      font-size: 11.5px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #a9aac6;
+    }
+
+    .invest-result-card .ir-figure {
+      font-family: var(--serif);
+      font-size: 28px;
+      color: #F7F2E7;
+      margin-top: 8px;
+    }
+
+    .invest-result-card .ir-sub {
+      font-size: 12.5px;
+      color: #a9aac6;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    .invest-winner-banner {
+      margin-top: 18px;
+      background: rgba(91, 122, 94, 0.14);
+      border: 1px solid rgba(91, 122, 94, 0.3);
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-size: 13.5px;
+      color: #c9e6cb;
+      line-height: 1.55;
+    }
+
+    .invest-context-note {
+      margin-top: 14px;
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid rgba(212, 175, 55, 0.22);
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-size: 12.5px;
+      color: #c7c8de;
+      line-height: 1.6;
+    }
+
+    .invest-context-note b {
+      color: #F7F2E7;
+    }
+
+    /* ===== LAND vs STOCKS — qualitative comparison ===== */
+    .lvs-grid {
+      display: grid;
+      gap: 22px;
+      grid-template-columns: 1fr;
+    }
+
+    @media(min-width:760px) {
+      .lvs-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .lvs-card {
+      background: #fff;
+      border-radius: 20px;
+      border: 1px solid rgba(17, 18, 56, 0.08);
+      padding: 32px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lvs-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+    }
+
+    .lvs-card.land::before {
+      background: linear-gradient(90deg, var(--gold), var(--stone));
+    }
+
+    .lvs-card.stocks::before {
+      background: var(--sage);
+    }
+
+    .lvs-card-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .lvs-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      flex: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 21px;
+    }
+
+    .lvs-card.land .lvs-icon {
+      background: rgba(212, 175, 55, 0.15);
+    }
+
+    .lvs-card.stocks .lvs-icon {
+      background: rgba(91, 122, 94, 0.15);
+    }
+
+    .lvs-card-head h3 {
+      font-size: 22px;
+    }
+
+    .lvs-card-head .lvs-sub {
+      font-size: 12.5px;
+      color: #8a8a96;
+      margin-top: 2px;
+    }
+
+    .lvs-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .lvs-list li {
+      display: flex;
+      gap: 11px;
+      align-items: flex-start;
+      font-size: 14px;
+      color: #3a3a44;
+      line-height: 1.5;
+    }
+
+    .lvs-list li::before {
+      content: '✓';
+      flex: none;
+      font-weight: 700;
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10.5px;
+      margin-top: 2px;
+    }
+
+    .lvs-card.land .lvs-list li::before {
+      background: rgba(212, 175, 55, 0.18);
+      color: var(--stone);
+    }
+
+    .lvs-card.stocks .lvs-list li::before {
+      background: rgba(91, 122, 94, 0.18);
+      color: var(--sage);
+    }
+
+    .lvs-scenario-head {
+      margin-top: 48px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .lvs-scenario-head h3 {
+      font-size: clamp(22px, 3vw, 28px);
+    }
+
+    .lvs-scenario-grid {
+      display: grid;
+      gap: 22px;
+      grid-template-columns: 1fr;
+    }
+
+    @media(min-width:760px) {
+      .lvs-scenario-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .lvs-scenario-card {
+      border-radius: 18px;
+      padding: 26px 26px;
+    }
+
+    .lvs-scenario-card.land {
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+    }
+
+    .lvs-scenario-card.stocks {
+      background: rgba(91, 122, 94, 0.08);
+      border: 1px solid rgba(91, 122, 94, 0.25);
+    }
+
+    .lvs-scenario-card h4 {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .lvs-scenario-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .lvs-scenario-list li {
+      font-size: 14px;
+      color: #3a3a44;
+      display: flex;
+      gap: 9px;
+      line-height: 1.5;
+    }
+
+    .lvs-scenario-list li .arrow {
+      font-weight: 700;
+      flex: none;
+    }
+
+    .lvs-scenario-card.land .arrow {
+      color: var(--stone);
+    }
+
+    .lvs-scenario-card.stocks .arrow {
+      color: var(--sage);
+    }
+
+    .lvs-message {
+      margin-top: 48px;
+      background: var(--navy);
+      border-radius: 22px;
+      padding: 52px 32px;
+      text-align: center;
+    }
+
+    .lvs-message p {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(20px, 3vw, 27px);
+      color: #F7F2E7;
+      line-height: 1.55;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .lvs-message p em {
+      color: var(--gold-soft);
+      font-style: italic;
+    }
+
+    .lvs-message .lvs-message-tail {
+      display: block;
+      margin-top: 16px;
+      font-family: var(--sans);
+      font-weight: 500;
+      font-size: 14px;
+      color: #a9aac6;
+      letter-spacing: 0.01em;
+    }
+
+    .lvs-trust-line {
+      margin: 22px auto 0;
+      text-align: center;
+      font-size: 13.5px;
+      color: #7a7a86;
+      max-width: 600px;
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    /* ===== FULL-PAYMENT RENTAL PLAN ===== */
+    .rental-grid {
+      display: grid;
+      gap: 22px;
+      grid-template-columns: 1fr;
+      margin-bottom: 32px;
+    }
+
+    @media(min-width:760px) {
+      .rental-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .rental-card {
+      background: #fff;
+      border-radius: 20px;
+      border: 1px solid rgba(17, 18, 56, 0.08);
+      padding: 30px 28px;
+    }
+
+    .rental-card .r-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: rgba(212, 175, 55, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 21px;
+      margin-bottom: 16px;
+    }
+
+    .rental-card h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .rental-card p {
+      font-size: 14px;
+      color: #5a5a66;
+      line-height: 1.65;
+    }
+
+    .rental-calc-grid {
+      display: grid;
+      gap: 28px;
+      grid-template-columns: 1fr;
+    }
+
+    @media(min-width:860px) {
+      .rental-calc-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .rental-months-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .rental-eligibility {
+      display: inline-flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .elig-pill {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 13px;
+      border-radius: 100px;
+    }
+
+    .elig-yes {
+      background: rgba(91, 122, 94, 0.14);
+      color: var(--sage);
+    }
+
+    .elig-no {
+      background: rgba(28, 28, 34, 0.07);
+      color: #8a8a96;
+    }
+
+    /* ===== 2030 EXAMPLE CALLOUT (rental plan) ===== */
+    .example-2030 {
+      margin-top: 28px;
+      background: linear-gradient(135deg, #171938, #111238);
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      border-radius: 20px;
+      padding: 30px 28px;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .example-2030::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), var(--stone));
+    }
+
+    .example-2030-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+    }
+
+    .example-2030-head h3 {
+      font-size: 20px;
+      color: #F7F2E7;
+    }
+
+    .example-2030-pill {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: rgba(212, 175, 55, 0.18);
+      color: var(--gold-soft);
+      padding: 5px 12px;
+      border-radius: 100px;
+    }
+
+    .example-2030>p.e30-lede {
+      font-size: 13.5px;
+      color: #a9aac6;
+      margin-bottom: 24px;
+      max-width: 640px;
+      line-height: 1.6;
+    }
+
+    .e30-stats {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+
+    @media(min-width:760px) {
+      .e30-stats {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .e30-stat {
+      background: #1e2049;
+      border: 1px solid rgba(212, 175, 55, 0.15);
+      border-radius: 14px;
+      padding: 18px 18px;
+    }
+
+    .e30-stat .e30-lab {
+      font-size: 11.5px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #a9aac6;
+    }
+
+    .e30-stat .e30-fig {
+      font-family: var(--serif);
+      font-size: 24px;
+      color: #F7F2E7;
+      margin-top: 8px;
+    }
+
+    .e30-stat .e30-sub {
+      font-size: 12px;
+      color: #8f91b3;
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+
+    .e30-stat.combo {
+      background: rgba(91, 122, 94, 0.16);
+      border-color: rgba(91, 122, 94, 0.35);
+    }
+
+    .e30-stat.combo .e30-fig {
+      color: #a9e0ad;
+    }
+
+    .e30-note {
+      font-size: 11.5px;
+      color: #8f91b3;
+      margin-top: 18px;
+      line-height: 1.6;
+    }
+
+    /* ===== HARMONY HEIGHTS (flats project) ===== */
+    .hh-offer-card {
+      background: linear-gradient(135deg, #16331f, #0e2015);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 22px;
+      padding: 34px 30px;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 32px;
+    }
+
+    .hh-offer-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), var(--sage));
+    }
+
+    .hh-offer-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .hh-offer-head h3 {
+      font-size: 24px;
+      color: #F7F2E7;
+    }
+
+    .hh-offer-pill {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--stone);
+      color: #fff;
+      padding: 5px 12px;
+      border-radius: 100px;
+    }
+
+    .hh-offer-card>p.hh-lede {
+      font-size: 14px;
+      color: #c7d6c9;
+      max-width: 640px;
+      line-height: 1.65;
+      margin-bottom: 26px;
+    }
+
+    .hh-offer-stats {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+
+    @media(min-width:700px) {
+      .hh-offer-stats {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .hh-offer-stat {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(212, 175, 55, 0.18);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .hh-offer-stat .lab {
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #a9c6ac;
+    }
+
+    .hh-offer-stat .fig {
+      font-family: var(--serif);
+      font-size: 24px;
+      color: #F7F2E7;
+      margin-top: 8px;
+    }
+
+    .hh-offer-cta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+
+    .hh-offer-cta a.enquire-btn,
+    .hh-offer-cta a.wa-btn {
+      flex: none;
+      padding: 13px 22px;
+    }
+
+    .hh-stats-grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 32px;
+    }
+
+    @media(min-width:760px) {
+      .hh-stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .hh-stat-tile {
+      background: #fff;
+      border: 1px solid rgba(17, 18, 56, 0.08);
+      border-radius: 16px;
+      padding: 18px 18px;
+    }
+
+    .hh-stat-tile .fig {
+      font-family: var(--serif);
+      font-size: 22px;
+      color: var(--stone);
+    }
+
+    .hh-stat-tile .lab {
+      font-size: 12px;
+      color: #7a7a86;
+      margin-top: 6px;
+      line-height: 1.4;
+    }
+
+    .hh-amenity-grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: 1fr;
+      margin-top: 10px;
+    }
+
+    @media(min-width:700px) {
+      .hh-amenity-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(min-width:1000px) {
+      .hh-amenity-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .hh-amenity-card {
+      background: #fff;
+      border: 1px solid rgba(17, 18, 56, 0.08);
+      border-radius: 16px;
+      padding: 22px 22px;
+    }
+
+    .hh-amenity-card h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 16.5px;
+      margin-bottom: 12px;
+      color: var(--stone);
+    }
+
+    .hh-amenity-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .hh-amenity-card li {
+      font-size: 13px;
+      color: #5a5a66;
+      line-height: 1.5;
+    }
+
+    .hh-amenity-card li::before {
+      content: '· ';
+      color: var(--sage);
+      font-weight: 700;
+    }
+
+    .hh-block-note {
+      font-size: 12px;
+      color: #8a8a96;
+      margin-top: 14px;
+      line-height: 1.6;
+    }
+
+    /* ===== CTA / FOOTER ===== */
+    .cta-final {
+      background: var(--navy);
+      color: #fff;
+      text-align: left;
+      padding: 80px 0;
+    }
+
+    .cta-final h2 {
+      font-size: clamp(30px, 5vw, 46px);
+      max-width: 640px;
+    }
+
+    .cta-final p {
+      margin-top: 16px;
+      max-width: 480px;
+      color: #a9aac6;
+    }
+
+    /* ===== LEAD FORM (final CTA) ===== */
+    .cta-grid {
+      display: grid;
+      gap: 36px;
+      grid-template-columns: 1fr;
+      margin-top: 36px;
+    }
+
+    @media(min-width:900px) {
+      .cta-grid {
+        grid-template-columns: 1fr 1.1fr;
+        align-items: start;
+      }
+    }
+
+    .cta-left .btn {
+      margin-top: 8px;
+    }
+
+    .lead-form {
+      background: #171938;
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 20px;
+      padding: 26px 24px;
+    }
+
+    .lead-form h3 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .lead-form .lf-sub {
+      font-size: 12.5px;
+      color: #a9aac6;
+      margin-bottom: 20px;
+    }
+
+    .lf-field {
+      margin-bottom: 16px;
+    }
+
+    .lf-field label {
+      display: block;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #a9aac6;
+      margin-bottom: 7px;
+    }
+
+    .lf-field input,
+    .lf-field select,
+    .lf-field textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      font-family: var(--sans);
+      font-size: 14.5px;
+      background: #1e2049;
+      color: #F7F2E7;
+    }
+
+    .lf-field textarea {
+      resize: vertical;
+      min-height: 70px;
+    }
+
+    .lf-field input:focus,
+    .lf-field select:focus,
+    .lf-field textarea:focus {
+      outline: 2px solid var(--gold);
+      outline-offset: 1px;
+    }
+
+    .lf-submit {
+      width: 100%;
+      border: none;
+      border-radius: 100px;
+      padding: 14px 20px;
+      font-family: var(--sans);
+      font-weight: 700;
+      font-size: 14.5px;
+      cursor: pointer;
+      background: #25D366;
+      color: #06341a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .lf-submit:hover {
+      filter: brightness(1.05);
+    }
+
+    .lf-note {
+      font-size: 11px;
+      color: #8f91b3;
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+
+    footer {
+      background: #0c0d29;
+      color: #8f91b3;
+      padding: 36px 0;
+      font-size: 13px;
+    }
+
+    .foot-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .foot-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    ::selection {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .disc-band {
+      background: #fbf3d9;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      color: #5a4a17;
+      font-size: 13px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a class="logo" href="#top">
+        <span class="logo-mark"></span>
+        <span class="logo-text">Township<br>Capital</span>
+      </a>
+      <div class="navlinks" id="navLinks">
+        <a href="#projects">Projects</a>
+        <a href="#harmony-heights">Harmony Heights</a>
+        <a href="#top-features">Why us</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#growth-tiers">Growth tiers</a>
+        <a href="#compare">Compare</a>
+        <a href="#trends">Trends</a>
+        <a href="#investment-compare">Land vs Stocks</a>
+        <a href="#news">News</a>
+        <a href="#calculator">Calculator</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="btn btn-gold nav-cta" href="#contact">DM "PLOT"</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-hills" aria-hidden="true">
+        <svg viewBox="0 0 1200 500" preserveAspectRatio="none">
+          <path
+            d="M0,420 C150,340 300,460 480,380 C650,310 780,420 950,360 C1050,325 1150,380 1200,340 L1200,500 L0,500 Z"
+            fill="rgba(212,175,55,0.08)" />
+          <path
+            d="M0,460 C180,400 340,480 520,430 C700,380 850,460 1020,410 C1100,388 1160,420 1200,400 L1200,500 L0,500 Z"
+            fill="rgba(212,175,55,0.14)" />
+        </svg>
+      </div>
+      <div class="wrap hero-inner">
+        <div class="eyebrow">Rajgir, Bihta, Ekma &amp; Danapur, Bihar</div>
+        <h1>The ground floor of Bihar's <em>next</em> growth corridor.</h1>
+        <p class="lede">Verified plots and flats from DNS Homes — Mountain Bliss in Rajgir, Shuvida Enclave in Bihta,
+          Ekma City in Saran, and now Harmony Heights, DNS Homes' first flats project in Danapur — with the real
+          numbers on where prices stand today and where they could go.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-gold" href="#pricing">See plot prices →</a>
+          <a class="btn btn-outline" href="#contact">Talk to Township</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="num">₹551/sqft</div>
+            <div class="lab">Ekma City, Saran · launch rate, till 30 Aug</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">₹950/sqft</div>
+            <div class="lab">Mountain Bliss, Rajgir · rate from 1 Jul 2026</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">₹1,499/sqft</div>
+            <div class="lab">Shuvida Enclave, Bihta · current rate</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">₹35 L</div>
+            <div class="lab">Harmony Heights, Danapur · 3 BHK, first 50 flats</div>
+          </div>
+        </div>
+        <div class="hero-launch-banner">
+          <div class="hlb-text">
+            <span class="hlb-pill">New · Flats</span>
+            Harmony Heights, Danapur — 3 BHK at ₹35 L one-time payment, first 50 flats only. Completion by 2030.
+          </div>
+          <a class="btn btn-gold" href="#harmony-heights">See Harmony Heights →</a>
+        </div>
+        <div class="disclaimer-tag">Rates from current DNS Homes project material. Katha conversion uses the
+          Patna/Magadh standard (1 katha = 1,361.25 sq ft) — confirm locally, it varies by thana.</div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section-cream" id="projects">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="eyebrow on-light">DNS Homes projects</div>
+          <h2>Four places, four different <em>kinds</em> of bet.</h2>
+          <p>Rajgir is a tourism and sports story. Bihta is a highway and airport-access story. Ekma is the newest
+            plotted launch, priced at entry rates for a limited window. Harmony Heights, in Danapur, is DNS Homes'
+            first move into ready-to-book flats. All are early.</p>
+        </div>
+        <div class="project-grid">
+          <div class="project-card" style="position:relative;">
+            <div class="project-photo" style="background:linear-gradient(160deg,#7a5a1f,#111238);">
+              <span class="tag-pill" style="background:#a05a2c; color:#fff;">New launch · offer till 30 Aug</span>
+              <span class="project-loc">📍 Ekma, Saran district</span>
+            </div>
+            <div class="project-body">
+              <div class="kicker">DNS Homes · Ekma City · Plotted township</div>
+              <h3>Ekma City, Saran</h3>
+              <ul class="project-infra">
+                <li>51.76 bigha township — wide 30–35 ft roads throughout</li>
+                <li>Dedicated parks, temple &amp; kids' play area, guarded entrance</li>
+                <li>Rate rises from ₹551 to ₹700/sq ft on 1 September 2026</li>
+                <li>Ekma railway station — 1 km</li>
+                <li>Ramadhar Singh B.Ed College, Ekma — 2.5 km</li>
+                <li>Jyoti Center High School, Ekma — 1 km</li>
+              </ul>
+              <div class="project-meta">
+                <div class="price">₹5.51 L onwards</div>
+                <div class="specs">1,000–2,400 sq ft plots · ₹551/sq ft launch rate</div>
+              </div>
+              <div class="project-cta-row">
+                <a class="enquire-btn" href="#contact">Enquire</a>
+                <a class="wa-btn"
+                  href="https://wa.me/917282817217?text=Hi%2C%20I%20am%20interested%20in%20Ekma%20City%2C%20Saran%20%28DNS%20Homes%29.%20Please%20share%20more%20details%20and%20the%20current%20offer."
+                  target="_blank" rel="noopener">💬 WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-photo rajgir">
+              <span class="tag-pill">Near International Stadium</span>
+              <span class="project-loc">📍 Saifabad, Rajgir, Nalanda</span>
+            </div>
+            <div class="project-body">
+              <div class="kicker">DNS Homes · Mountain Bliss · Plotted township</div>
+              <h3>Mountain Bliss, Rajgir</h3>
+              <ul class="project-infra">
+                <li>Next to the upcoming international cricket stadium</li>
+                <li>Near hot springs, Jain temples &amp; nature viewpoints</li>
+                <li>1% monthly rental plan on full payment</li>
+              </ul>
+              <div class="project-meta">
+                <div class="price">₹5.70 L onwards</div>
+                <div class="specs">600–3,000 sq ft plots · ₹950/sq ft</div>
+              </div>
+              <div class="project-cta-row">
+                <a class="enquire-btn" href="#contact">Enquire</a>
+                <a class="wa-btn"
+                  href="https://wa.me/917282817217?text=Hi%2C%20I%20am%20interested%20in%20Mountain%20Bliss%2C%20Rajgir%20%28DNS%20Homes%29.%20Please%20share%20more%20details%20and%20the%20current%20offer."
+                  target="_blank" rel="noopener">💬 WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-photo bihta">
+              <span class="tag-pill">5 min from IIT Patna</span>
+              <span class="project-loc">📍 Bihta, Patna district</span>
+            </div>
+            <div class="project-body">
+              <div class="kicker">DNS Homes · Shuvida Enclave · Plotted township</div>
+              <h3>Shuvida Enclave, Bihta</h3>
+              <ul class="project-infra">
+                <li>IIT Patna &amp; bus stand — 5 minutes</li>
+                <li>Bihta railway station — 7 min · Airport — 10 min</li>
+                <li>Near ESIC Hospital, DAV &amp; Central Public School</li>
+              </ul>
+              <div class="project-meta">
+                <div class="price">₹14.99 L onwards</div>
+                <div class="specs">1,000–3,600 sq ft plots · ₹1,499/sq ft</div>
+              </div>
+              <div class="project-cta-row">
+                <a class="enquire-btn" href="#contact">Enquire</a>
+                <a class="wa-btn"
+                  href="https://wa.me/917282817217?text=Hi%2C%20I%20am%20interested%20in%20Shuvida%20Enclave%2C%20Bihta%20%28DNS%20Homes%29.%20Please%20share%20more%20details%20and%20the%20current%20offer."
+                  target="_blank" rel="noopener">💬 WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" style="position:relative;">
+            <div class="project-photo harmony">
+              <span class="tag-pill" style="background:var(--sage); color:#fff;">Flats · Launch offer</span>
+              <span class="project-loc">📍 Danapur, Patna district</span>
+            </div>
+            <div class="project-body">
+              <div class="kicker">DNS Homes · Harmony Heights · Residential apartments</div>
+              <h3>Harmony Heights, Danapur</h3>
+              <ul class="project-infra">
+                <li>G+8 Blocks A, B &amp; C + G+4 EWS Block D — 85,541 sq ft township</li>
+                <li>66% open space · clubhouse, pool, gym &amp; kids' play area</li>
+                <li>3 BHK launch offer: ₹35 L, one-time payment — first 50 flats only</li>
+                <li>Near Shiwala Chowk, Danapur-Bihta Road — opposite Picnic Garden</li>
+                <li>Designed by Avatansa Design Studio · completion by 2030</li>
+              </ul>
+              <div class="project-meta">
+                <div class="price">₹35 L onwards</div>
+                <div class="specs">2 &amp; 3 BHK · ~1,150–1,200 sq ft flats</div>
+              </div>
+              <div class="project-cta-row">
+                <a class="enquire-btn" href="#harmony-heights">Enquire</a>
+                <a class="wa-btn"
+                  href="https://wa.me/917282817217?text=Hi%2C%20I%20am%20interested%20in%20Harmony%20Heights%2C%20Danapur%20%28DNS%20Homes%29.%20Please%20share%20more%20details%20on%20the%20%E2%82%B935L%203BHK%20offer%20for%20the%20first%2050%20flats."
+                  target="_blank" rel="noopener">💬 WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HARMONY HEIGHTS (flats project) ================= -->
+    <section class="section-deep" id="harmony-heights">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="eyebrow on-light">DNS Homes' first flats project</div>
+          <h2>Harmony Heights — flats, not plots.</h2>
+          <p>A gated, G+8 apartment community on Danapur-Bihta Road, designed by Avatansa Design Studio — with a
+            clubhouse, pool and gym built in, and a limited one-time-payment offer on the first 50 3 BHK flats.</p>
+        </div>
+
+        <div class="disc-band">
+          ⚠ Details below are from current DNS Homes project material for Harmony Heights (Aug 2026). The 3 BHK ₹35 L
+          one-time-payment offer is limited to the first 50 flats booked — confirm live availability, exact unit,
+          floor, and payment terms directly with the team before paying anything.
+        </div>
+
+        <div class="hh-offer-card">
+          <div class="hh-offer-head">
+            <h3>₹35 Lakh — 3 BHK, one-time payment</h3>
+            <span class="hh-offer-pill">First 50 flats only</span>
+          </div>
+          <p class="hh-lede">Pay the full flat value upfront and book a 3 BHK at Harmony Heights for ₹35 L — a
+            launch-window price limited to the first 50 flats sold. Project completion is targeted for 2030.</p>
+          <div class="hh-offer-stats">
+            <div class="hh-offer-stat">
+              <div class="lab">Launch price</div>
+              <div class="fig">₹35 L</div>
+            </div>
+            <div class="hh-offer-stat">
+              <div class="lab">Configuration</div>
+              <div class="fig">3 BHK</div>
+            </div>
+            <div class="hh-offer-stat">
+              <div class="lab">Payment plan</div>
+              <div class="fig">One-time</div>
+            </div>
+            <div class="hh-offer-stat">
+              <div class="lab">Completion</div>
+              <div class="fig">By 2030</div>
+            </div>
+          </div>
+          <div class="hh-offer-cta">
+            <a class="enquire-btn" href="#contact" style="background:var(--gold); color:var(--navy); border-radius:100px; text-decoration:none; font-weight:700; display:inline-flex; align-items:center;">Enquire about this offer</a>
+            <a class="wa-btn"
+              href="https://wa.me/917282817217?text=Hi%2C%20I%20am%20interested%20in%20the%20%E2%82%B935L%203BHK%20one-time-payment%20offer%20at%20Harmony%20Heights%2C%20Danapur%20%28first%2050%20flats%29.%20Please%20share%20availability."
+              target="_blank" rel="noopener" style="border-radius:100px; text-decoration:none; display:inline-flex; align-items:center;">💬 WhatsApp about the offer</a>
+          </div>
+        </div>
+
+        <div class="hh-stats-grid">
+          <div class="hh-stat-tile">
+            <div class="fig">85,541 sqft</div>
+            <div class="lab">Total plot area</div>
+          </div>
+          <div class="hh-stat-tile">
+            <div class="fig">3 + 1</div>
+            <div class="lab">Blocks A, B, C (G+8) + Block D, EWS (G+4)</div>
+          </div>
+          <div class="hh-stat-tile">
+            <div class="fig">66%</div>
+            <div class="lab">Open space kept green</div>
+          </div>
+          <div class="hh-stat-tile">
+            <div class="fig">2030</div>
+            <div class="lab">Targeted project completion</div>
+          </div>
+        </div>
+
+        <div class="price-table-wrap" style="margin-bottom:32px;">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Block</th>
+                <th>Height</th>
+                <th>Type</th>
+                <th>Approx. flat size</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Block A</td>
+                <td class="num">G+8</td>
+                <td>Residential — 3 BHK</td>
+                <td class="num">~1,198 sq ft</td>
+              </tr>
+              <tr>
+                <td>Block B &amp; C</td>
+                <td class="num">G+8</td>
+                <td>Residential — 2 &amp; 3 BHK</td>
+                <td class="num">~1,154 sq ft</td>
+              </tr>
+              <tr>
+                <td>Block D</td>
+                <td class="num">G+4</td>
+                <td>EWS apartments</td>
+                <td class="num">~360 sq ft</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="price-table-note">Key site stats: Permissible FAR 3.00 · Ground coverage 28,870 sq ft · Open
+            area provided 56,671 sq ft · Front setback 9M · Rear setback 6M · Side setback 6M · 40-ft wide road on
+            the north side. Location: near Shiwala Chowk (opposite Picnic Garden), Danapur-Bihta Road, Usri, Danapur,
+            Patna, Bihar, 801105.</div>
+        </div>
+
+        <div class="head-row" style="margin-bottom:24px;">
+          <div class="eyebrow on-light">Everything included</div>
+          <h3 style="font-size:24px;">Amenities at Harmony Heights</h3>
+        </div>
+        <div class="hh-amenity-grid">
+          <div class="hh-amenity-card">
+            <h4>Safety &amp; security</h4>
+            <ul>
+              <li>Security cabin &amp; 24x7 CCTV surveillance</li>
+              <li>Visitor management system &amp; video door phone</li>
+              <li>Fire hydrant system, fire alarm &amp; smoke detection</li>
+              <li>Fire extinguishers &amp; emergency exit staircase</li>
+            </ul>
+          </div>
+          <div class="hh-amenity-card">
+            <h4>Utilities &amp; services</h4>
+            <ul>
+              <li>DG power backup</li>
+              <li>STP (sewage treatment plant)</li>
+              <li>Underground &amp; overhead water tanks</li>
+              <li>Water softening / filtration plant</li>
+              <li>Energy-efficient LED lighting</li>
+            </ul>
+          </div>
+          <div class="hh-amenity-card">
+            <h4>Mobility &amp; parking</h4>
+            <ul>
+              <li>Resident's &amp; visitor's parking</li>
+              <li>Bicycle parking</li>
+              <li>Passenger lifts &amp; service lift</li>
+              <li>Drop-off zone, ramp access &amp; barrier-free design</li>
+            </ul>
+          </div>
+          <div class="hh-amenity-card">
+            <h4>Recreation &amp; lifestyle</h4>
+            <ul>
+              <li>Landscaped central courtyard &amp; garden</li>
+              <li>Swimming pool &amp; kids' pool</li>
+              <li>Children's play area &amp; badminton court</li>
+              <li>Outdoor gym, yoga &amp; meditation deck</li>
+              <li>Walking / jogging track &amp; water feature</li>
+            </ul>
+          </div>
+          <div class="hh-amenity-card">
+            <h4>Community &amp; others</h4>
+            <ul>
+              <li>Clubhouse &amp; reception lobby</li>
+              <li>Senior citizen seating area</li>
+              <li>Wheelchair-accessible entrances, handrails &amp; tactile paving</li>
+              <li>Drip irrigation for landscaping</li>
+            </ul>
+          </div>
+          <div class="hh-amenity-card">
+            <h4>Project team</h4>
+            <ul>
+              <li>Developer: DNS Homes Private Limited — "Let Us Guide You Home"</li>
+              <li>Architectural consultant: Avatansa Design Studio, Patna</li>
+              <li>3 residential blocks (G+8) + 1 EWS block (G+4)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="hh-block-note">Disclaimer: layouts, elevations, specifications and areas are conceptual and
+          indicative, subject to change as per final sanctioned plans and government approvals. The actual
+          development may vary.</div>
+      </div>
+    </section>
+
+
+
+    <!-- ================= TOP 5 FEATURES ================= -->
+    <section class="section-dark" id="top-features">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="eyebrow">Why buyers choose Township Capital</div>
+          <h2 style="color:#fff">The <em>5 features</em> that matter before you buy.</h2>
+          <p style="color:#a9aac6">A quick decision checklist covering legality, ownership, infrastructure and the
+            buying process. Verify project-specific claims and documents before booking.</p>
+        </div>
+
+        <div class="top5-grid">
+          <article class="top5-card">
+            <div class="top5-number">01</div>
+            <div class="top5-icon">✓</div>
+            <h3>RERA Registered</h3>
+            <p>Prioritise projects with a verifiable registration and check the project details on the official Bihar
+              RERA portal.</p>
+            <div class="top5-proof">VERIFY BEFORE PAYMENT</div>
+          </article>
+
+          <article class="top5-card">
+            <div class="top5-number">02</div>
+            <div class="top5-icon">⌂</div>
+            <h3>Premium Residential Plots</h3>
+            <p>Plot-focused communities designed for buyers who want land ownership for a future home, second home or
+              long-term holding.</p>
+            <div class="top5-proof">OWN LAND. BUILD LATER.</div>
+          </article>
+
+          <article class="top5-card">
+            <div class="top5-number">03</div>
+            <div class="top5-icon">▣</div>
+            <h3>Registry Assistance</h3>
+            <p>Support through the documentation and registry process so the buyer knows what needs to be completed
+              before finalising ownership.</p>
+            <div class="top5-proof">DOCUMENTATION SUPPORT</div>
+          </article>
+
+          <article class="top5-card">
+            <div class="top5-number">04</div>
+            <div class="top5-icon">◆</div>
+            <h3>Secure Documentation</h3>
+            <p>Keep title, agreement, payment and registry documents organised and verify the underlying land records
+              independently.</p>
+            <div class="top5-proof">DUE DILIGENCE FIRST</div>
+          </article>
+
+          <article class="top5-card">
+            <div class="top5-number">05</div>
+            <div class="top5-icon">✦</div>
+            <h3>Well-Planned Township</h3>
+            <p>Highlight planned roads, parks, access and community infrastructure rather than selling the plot as just
+              an empty piece of land.</p>
+            <div class="top5-proof">PLANNED FOR LONG-TERM USE</div>
+          </article>
+        </div>
+
+        <div class="disc-band" style="margin-top:28px;margin-bottom:0;">
+          ⚠ <b>Important:</b> “RERA Registered”, documentation and infrastructure claims should be checked against the
+          relevant project documents and official records. This section is a decision aid, not a guarantee of returns or
+          title quality.
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRICING & PROJECTED VALUE ================= -->
+    <section class="section-deep" id="pricing">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="eyebrow on-light">Current price + where it could go</div>
+          <h2>Buy today, worth <em>this much</em> later.</h2>
+          <p>Every plot size at today's rate, projected forward so a buyer can see the estimated gain — not just the
+            entry price.</p>
+        </div>
+        <div class="disc-band">
+          ⚠ Current prices are from live DNS Homes project material (Aug 2026). Projected values use a chosen growth
+          assumption, not a guarantee — actual appreciation depends on registry activity, infrastructure delivery, and
+          demand.
+        </div>
+
+        <div class="horizon-controls">
+          <div class="control-group">
+            <div class="cg-label">Holding period</div>
+            <div class="chip-row" id="horizonChips">
+              <div class="chip" data-years="3">3 yrs</div>
+              <div class="chip active" data-years="5">5 yrs</div>
+              <div class="chip" data-years="10">10 yrs</div>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="cg-label">Growth assumption</div>
+            <div class="chip-row" id="rateChips">
+              <div class="chip" data-rate="6">Conservative · 6%/yr</div>
+              <div class="chip active gold-active" data-rate="10">Moderate · 10%/yr</div>
+              <div class="chip" data-rate="15">Optimistic · 15%/yr</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-block">
+          <div class="price-block-head">
+            <h3>Ekma City, Saran</h3>
+            <div class="rate-tag">₹551/sq ft · launch rate, book by 30 Aug 2026</div>
+          </div>
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>Plot size</th>
+                  <th>Current price</th>
+                  <th>Projected value</th>
+                  <th>Est. gain</th>
+                </tr>
+              </thead>
+              <tbody id="ekmaPriceBody"></tbody>
+            </table>
+            <div class="price-table-note">Booking plan: standard DNS Homes structure — 20% booking, balance per
+              agreement. 1% monthly rental plan available on full payment. Commercial plots (1,800 sq ft) also open —
+              ask directly.</div>
+          </div>
+          <div class="disc-band" style="margin-top:16px; margin-bottom:0;">
+            ⏰ <b>Confirmed price step, not a projection:</b> the rate moves from ₹551 to ₹700/sq ft on 1 September 2026
+            — a confirmed ~27% jump for anyone who books after the launch window closes on 30 August. The table above
+            uses today's ₹551 rate; the long-term projections still apply on top of whichever rate you lock in.
+          </div>
+        </div>
+
+        <div class="price-block">
+          <div class="price-block-head">
+            <h3>Mountain Bliss, Rajgir</h3>
+            <div class="rate-tag">₹950/sq ft · effective 1 July 2026</div>
+          </div>
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>Plot size</th>
+                  <th>Current price</th>
+                  <th>Projected value</th>
+                  <th>Est. gain</th>
+                </tr>
+              </thead>
+              <tbody id="rajgirPriceBody"></tbody>
+            </table>
+            <div class="price-table-note">Booking plan: 20% booking · 40% agreement · balance in 60-month EMI, or 1%
+              monthly rental if paid in full.</div>
+          </div>
+        </div>
+
+        <div class="price-block">
+          <div class="price-block-head">
+            <h3>Shuvida Enclave, Bihta</h3>
+            <div class="rate-tag">₹1,499/sq ft · current rate</div>
+          </div>
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>Plot size</th>
+                  <th>Current price</th>
+                  <th>Projected value</th>
+                  <th>Est. gain</th>
+                </tr>
+              </thead>
+              <tbody id="bihtaPriceBody"></tbody>
+            </table>
+            <div class="price-table-note">Booking plan: 20% booking · 40% agreement · balance in 36-month EMI.</div>
+          </div>
+          <div class="disc-band" style="margin-top:16px; margin-bottom:0;">
+            📍 <b>Where this sits in the open market:</b> land within a 5-minute radius of IIT Patna (Bihta) is
+            currently trading between ₹1,500–₹2,240/sq ft in the open market — roughly ₹20L–30.5L per katha. Shuvida
+            Enclave's ₹1,499/sq ft sits right at the entry point of that range.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FULL-PAYMENT RENTAL PLAN ================= -->
+    <section class="section-deep" id="rental-plan">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="eyebrow on-light">Skip the EMI, get paid instead</div>
+          <h2>Pay in full — get the land <em>and</em> money back, every month.</h2>
+          <p>On Ekma City and Mountain Bliss, there's a second way to buy: instead of an EMI, pay the full plot value
+            upfront and DNS Homes credits back 1% of what you paid, every month, on top of the land you now own.</p>
+        </div>
+
+        <div class="rental-grid">
+          <div class="rental-card">
+            <div class="r-icon">🏡</div>
+            <h3>You still own the land</h3>
+            <p>The plot is registered in your name like any other purchase — full ownership, same title process, same
+              potential to benefit from the area's growth and infrastructure over time. Paying in full changes how you
+              pay, not what you own.</p>
+          </div>
+          <div class="rental-card">
+            <div class="r-icon">💰</div>
+            <h3>Plus cash back, monthly</h3>
+            <p>Because there's no EMI to service, DNS Homes routes 1% of your full payment back to you every month
+              instead — a steady credit that starts flowing while your land sits and appreciates in the background.</p>
+          </div>
+        </div>
+
+        <div class="rental-calc-grid">
+          <div class="calc-card">
+            <div class="field">
+              <label for="rentalAmount">Full payment amount (₹)</label>
+              <input type="number" id="rentalAmount" value="1000000" min="0" step="10000">
+            </div>
+            <div class="field">
+              <label>Project as cumulative credit over</label>
+              <div class="rental-months-row" id="rentalMonthsChips">
+                <div class="scenario-chip" data-months="12">12 months</div>
+                <div class="scenario-chip active" data-months="24">24 months</div>
+                <div class="scenario-chip" data-months="60">60 months</div>
+              </div>
+            </div>
+            <div class="rental-eligibility">
+              <span class="elig-pill elig-yes">✓ Ekma City, Saran</span>
+              <span class="elig-pill elig-yes">✓ Mountain Bliss, Rajgir</span>
+              <span class="elig-pill elig-no">Not on Shuvida Enclave, Bihta</span>
+            </div>
+          </div>
+          <div class="result-card">
+            <div class="result-top">
+              <div class="lab">Monthly credit back to you</div>
+              <div class="figure" id="rentalMonthly">₹0</div>
+              <div class="sub" id="rentalMonthlySub">1% of ₹0 paid in full</div>
+              <div class="profit-line">≈ 12% of your payment returned per year</div>
+            </div>
+            <div class="result-breakdown">
+              <div class="row"><span>Full payment</span><span id="rentalPrincipal">₹0</span></div>
+              <div class="row"><span>Total credited over selected period</span><span id="rentalTotal">₹0</span></div>
+              <div class="row"><span>Land ownership</span><span>Yours, separately — not reduced by the credit</span>
+              </div>
+            </div>
+            <div class="result-note">Illustrative, based on the documented 1% monthly rate. The exact tenure and terms
+              of the monthly credit are fixed in your booking agreement — confirm current terms directly with the team
+              before choosing full payment. This credit is a payment-plan benefit, not a guaranteed investment return,
+              and is separate from any land price appreciation.</div>
+          </div>
+        </div>
+
+        <!-- ===== 2030 EXAMPLE CALLOUT ===== -->
+        <div class="example-2030" id="example2030">
+          <div class="example-2030-head">
+            <h3>What this looks like by end of 2030</h3>
+            <span class="example-2030-pill">Worked example</span>
+          </div>
+          <p class="e30-lede">Using the amount you entered above, held on the full-payment plan from today through 31
+            December 2030 — showing the two benefits side by side, not blended into one number.</p>
+          <div class="e30-stats">
+            <div class="e30-stat">
+              <div class="e30-lab">Cash credited back to you</div>
+              <div class="e30-fig" id="e30CashBack">₹0</div>
+              <div class="e30-sub" id="e30CashSub">1%/month × 0 months to Dec 2030</div>
+            </div>
+            <div class="e30-stat">
+              <div class="e30-lab">Land you still own</div>
+              <div class="e30-fig" id="e30LandValue">₹0</div>
+              <div class="e30-sub">Full payment amount — untouched by the monthly credit, plus whatever the plot
+                appreciates in the meantime</div>
+            </div>
+            <div class="e30-stat combo">
+              <div class="e30-lab">Cash back as % of what you paid</div>
+              <div class="e30-fig" id="e30Pct">0%</div>
+              <div class="e30-sub">Received in hand by Dec 2030, on top of still owning the plot</div>
+            </div>
+          </div>
+          <div class="e30-note">This is the payment-plan credit only — it does not include any land price appreciation,
+            which is separate and shown in the calculator and Land vs Stocks tool further down the page. Confirm the
+            exact credit tenure in your booking agreement; DNS Homes material describes this as a fixed-term benefit,
+            not an open-ended one.</div>
+        </div>
+
+        <div class="disc-band" style="margin-top:24px; margin-bottom:0;">
+          ⚖ <b>How to think about it:</b> the standard route is 20% booking + agreement + an EMI you pay outward over
+          36–60 months. The full-payment route flips that — one upfront payment, then money flows back to you monthly
+          instead. It suits buyers who have the full amount ready and would rather receive a monthly credit than pay one
+          out. It's not free money — it's your own capital, deployed differently. Compare it against what that lump sum
+          could otherwise earn (see the calculator above) before deciding which route fits you.
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GROWTH TIERS ================= -->
+    <section class="section-cream" id="growth-tiers" style="padding-top:0;">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="eyebrow on-light">Greater Patna, zone by zone</div>
+          <h2>Not all growth is <em>equal</em> speed.</h2>
+          <p>Bihta sits inside the "Greater Patna" expansion — the state's push to decongest the capital across 14
+            blocks under the Patna Master Plan 2031. Different corridors are appreciating at different speeds.</p>
+        </div>
+        <div class="price-table-wrap">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Tier</th>
+                <th>Typical CAGR</th>
+                <th>5-yr outlook</th>
+                <th>Localities</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="profit-badge" style="background:rgba(160,90,44,0.14); color:var(--stone);">🚀
+                    Hyper-growth</span></td>
+                <td class="num">20–30%+</td>
+                <td>Doubles every 3–4 yrs</td>
+                <td>Naubatpur (+80% in 3 yrs), Sampatchak (+59.5%), Phulwari Sharif (+53.6%)</td>
+              </tr>
+              <tr>
+                <td><span class="profit-badge">⚡ Steady-high — Bihta's tier</span></td>
+                <td class="num">12–18%</td>
+                <td>+60–80% over 5 yrs</td>
+                <td>Bihta (IIT / airport zone), Danapur, Khagaul Road</td>
+              </tr>
+              <tr>
+                <td><span class="profit-badge" style="background:rgba(28,28,34,0.08); color:#5a5a66;">🧱 Mature /
+                    established</span></td>
+                <td class="num">8–12%</td>
+                <td>+30–50% over 5 yrs</td>
+                <td>Boring Road, Bailey Road, Patliputra Colony</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="price-table-note">Land right around IIT Patna (Sikariya / Amhara belt, where Shuvida Enclave sits)
+            has tracked closer to 20–25% CAGR specifically — ahead of Bihta's broader steady-high average — because of
+            the built-in student and staff housing demand from the 500+ acre campus. Danapur, home to Harmony Heights,
+            sits in the same steady-high tier as Bihta.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMPARE ================= -->
+    <section class="section-cream" id="compare">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="eyebrow on-light">Where people are comparing</div>
+          <h2>Rajgir vs Bihta vs <em>the rest</em> of Bihar.</h2>
+          <p>Average price per katha across the localities buyers usually shortlist alongside Rajgir and Bihta.</p>
+        </div>
+        <div class="disc-band">
+          ⚠ Ekma, Rajgir and Bihta figures are calculated from live DNS Homes pricing (marked <b>Verified</b>). Other
+          localities are indicative ranges for context, not confirmed listings — replace them in
+          <code>compareData</code> as you collect real comparables.
+        </div>
+        <div class="compare-toggle">
+          <button class="toggle-btn active" data-filter="all">All localities</button>
+        </div>
+        <div class="compare-panel" id="comparePanel"></div>
+
+        <div style="margin-top:36px;" class="disc-band">
+          ✅ <b>Before you buy anywhere in Greater Patna — check these first:</b>
+          <ul style="margin:10px 0 0 18px; padding:0; line-height:1.7;">
+            <li>Verify the developer's RERA registration on the official Bihar RERA portal before paying anything.</li>
+            <li>Confirm the plot's internal road is at least 20–30 ft wide — narrower village pathways hurt resale and
+              future construction approval.</li>
+            <li>Ask for physical demarcation, not just a "paper plot" — get boundary-wall or peg confirmation before
+              final payment.</li>
+            <li>Cross-check the seller's quoted price against the government Minimum Value Register (circle rate) for
+              that thana.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRENDS ================= -->
+    <section class="section-cream" id="trends" style="padding-top:0;">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="eyebrow on-light">5-year direction, not daily noise</div>
+          <h2>What's been <em>moving</em> prices here.</h2>
+          <p>Indexed appreciation since 2021, tied to real infrastructure milestones — not a prediction of future
+            returns.</p>
+        </div>
+        <div class="trend-wrap">
+          <div class="trend-legend">
+            <div class="legend-item"><span class="dot" style="background:#D4AF37"></span> Rajgir (Mountain Bliss)</div>
+            <div class="legend-item"><span class="dot" style="background:#a05a2c"></span> Bihta (Shuvida Enclave)</div>
+            <div class="legend-item"><span class="dot" style="background:#5b7a5e"></span> Ekma / Saran (Ekma City)</div>
+            <div class="legend-item"><span class="dot" style="background:#c9c4b0"></span> Bihar Sharif (reference)</div>
+          </div>
+          <svg class="trend-svg" id="trendSvg" viewBox="0 0 900 320"></svg>
+          <p class="trend-note">Index base = 100 in 2021, illustrative pattern — edit with real historical prices as you
+            track them. The 2026 Rajgir mark reflects Mountain Bliss's confirmed rate revision to ₹950/sq ft effective 1
+            July 2026. Rajgir's rise tracks the Sports Complex (opened 2024) and Zoo Safari (2022); Bihta's tracks
+            NH/IIT/airport access. <b>Ekma/Saran's uptick from 2025 reflects the Ekma–Chapra special area development
+              plan</b> (agri-processing hub, educational zone, commercial district) and the under-construction NH-131G
+            Patna Ring Road spur linking Dighwara (Saran) to Patna — Ekma City itself only launched in 2026, so this
+            line is directional, not a confirmed price history. Past appreciation does not guarantee future returns.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LAND vs STOCKS (qualitative) ================= -->
+    <section class="section-cream" id="land-vs-stocks">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="eyebrow on-light">Two assets, two jobs</div>
+          <h2>Land vs stocks — <em>plainly</em> put.</h2>
+          <p>Not "which one is better" — which one actually fits what you're trying to do with this money. Both are
+            legitimate. They're just built for different goals.</p>
+        </div>
+
+        <div class="lvs-grid">
+          <div class="lvs-card land">
+            <div class="lvs-card-head">
+              <div class="lvs-icon">🏡</div>
+              <div>
+                <h3>Land</h3>
+                <div class="lvs-sub">Physical, location-based asset</div>
+              </div>
+            </div>
+            <ul class="lvs-list">
+              <li>Physical &amp; tangible ownership</li>
+              <li>Finite supply at a specific location</li>
+              <li>Potential to benefit from infrastructure and area development</li>
+              <li>Can be used to build a home or other permitted property</li>
+              <li>Potential for development or rental income, depending on the property</li>
+              <li>Can become a long-term family/legacy asset</li>
+              <li>Suitable for investors who don't need immediate liquidity</li>
+              <li>Value can be influenced by location, connectivity, demand and development</li>
+              <li>Can diversify a portfolio beyond financial-market assets</li>
+              <li>Can be physically visited, inspected and evaluated</li>
+            </ul>
+          </div>
+
+          <div class="lvs-card stocks">
+            <div class="lvs-card-head">
+              <div class="lvs-icon">📈</div>
+              <div>
+                <h3>Stocks</h3>
+                <div class="lvs-sub">Financial-market asset</div>
+              </div>
+            </div>
+            <ul class="lvs-list">
+              <li>Highly liquid compared with physical property</li>
+              <li>Can start with relatively small capital</li>
+              <li>Easy diversification through mutual funds/index funds</li>
+              <li>Convenient for regular monthly investing</li>
+              <li>Easy to buy and sell through the market</li>
+              <li>No physical property maintenance</li>
+              <li>Exposure to company and economic growth</li>
+              <li>Market prices can fluctuate significantly</li>
+              <li>Suitable for investors prioritizing liquidity and financial-market diversification</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lvs-scenario-head">
+          <div class="eyebrow on-light" style="justify-content:center;">Match it to your goal</div>
+          <h3>Which one fits <em>your</em> goal?</h3>
+        </div>
+        <div class="lvs-scenario-grid">
+          <div class="lvs-scenario-card land">
+            <h4>Choose land when —</h4>
+            <ul class="lvs-scenario-list">
+              <li><span class="arrow">→</span> You want a physical asset</li>
+              <li><span class="arrow">→</span> You have a long investment horizon</li>
+              <li><span class="arrow">→</span> You don't need immediate liquidity</li>
+              <li><span class="arrow">→</span> You see potential in a specific developing location</li>
+              <li><span class="arrow">→</span> You may want future residential/development use</li>
+              <li><span class="arrow">→</span> You want a long-term family asset</li>
+            </ul>
+          </div>
+          <div class="lvs-scenario-card stocks">
+            <h4>Choose stocks when —</h4>
+            <ul class="lvs-scenario-list">
+              <li><span class="arrow">→</span> You need high liquidity</li>
+              <li><span class="arrow">→</span> You want easy diversification</li>
+              <li><span class="arrow">→</span> You want to invest smaller amounts regularly</li>
+              <li><span class="arrow">→</span> You prefer financial-market investments</li>
+              <li><span class="arrow">→</span> You don't want property-related paperwork or management</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lvs-message">
+          <p>
+            Stocks give you <em>financial-market ownership.</em><br>
+            Land gives you <em>physical ownership.</em>
+            <span class="lvs-message-tail">The better choice depends on what you want your money to achieve.</span>
+          </p>
+        </div>
+        <p class="lvs-trust-line">Don't choose an asset because it sounds better. Choose the asset that matches your
+          goal, time horizon, liquidity needs and risk tolerance.</p>
+      </div>
+    </section>
+
+    <!-- ================= INVESTMENT COMPARISON ================= -->
+    <section class="section-dark" id="investment-compare">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="eyebrow">Land vs everything else</div>
+          <h2 style="color:#fff">How does land stack up against <em>stocks &amp; gold?</em></h2>
+          <p style="color:#a9aac6">A fair comparison, not a sales pitch — including where land falls short.</p>
+        </div>
+        <div class="price-table-wrap" style="background:#171938; border-color:rgba(212,175,55,0.18);">
+          <table class="price-table" style="color:#e8e6f2;">
+            <thead>
+              <tr style="background:#1e2049;">
+                <th style="color:#a9aac6; background:#1e2049;">Asset class</th>
+                <th style="color:#a9aac6; background:#1e2049;">25-yr CAGR*</th>
+                <th style="color:#a9aac6; background:#1e2049;">Volatility</th>
+                <th style="color:#a9aac6; background:#1e2049;">Liquidity</th>
+                <th style="color:#a9aac6; background:#1e2049;">Typical entry</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(212,175,55,0.15);">
+                <td>Indian equities (Sensex)</td>
+                <td class="num" style="color:#F7F2E7;">~15%</td>
+                <td>High (30.7%)</td>
+                <td>Very high — sell in seconds</td>
+                <td>₹100s, via any broker</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(212,175,55,0.15);">
+                <td>Gold</td>
+                <td class="num" style="color:#F7F2E7;">~11%</td>
+                <td>Moderate (11.3%)</td>
+                <td>High — sell same day</td>
+                <td>₹1,000s (digital gold)</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(212,175,55,0.15);">
+                <td>Bank fixed deposits</td>
+                <td class="num" style="color:#F7F2E7;">~7.3%</td>
+                <td>Very low (1.6%)</td>
+                <td>High, with exit penalty</td>
+                <td>₹1,000s, any bank</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(212,175,55,0.15);">
+                <td>Real estate, 7 major Indian cities</td>
+                <td class="num" style="color:#F7F2E7;">~7%</td>
+                <td>Low, but lumpy</td>
+                <td>Low — months to sell</td>
+                <td>₹10L+</td>
+              </tr>
+              <tr>
+                <td>Land in an active Bihar growth corridor <span class="verified-pill"
+                    style="margin-left:4px;">context</span></td>
+                <td class="num" style="color:var(--gold-soft);">12–25%+</td>
+                <td>Low daily swing, but jumpy on news</td>
+                <td>Lowest — weeks to months</td>
+                <td>₹5L–₹20L for a plot</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="price-table-note"
+            style="background:#1e2049; color:#a9aac6; border-top-color:rgba(212,175,55,0.15);">
+            *Equities, gold, FD, and metro real estate figures are a 25-year compounded pre-tax return study (Morgan
+            Stanley, via Business Standard). The Bihar growth-corridor land figure is separate — pulled from documented
+            recent-year appreciation in specific pockets (e.g. Bihta near IIT Patna, Naubatpur) rather than a 25-year
+            series, since most of these corridors have only been active for a few years. Treat it as directional, not
+            equivalent data.
+          </div>
+        </div>
+        <div class="disc-band" style="margin-top:20px;">
+          ⚖ <b>The honest trade-off:</b> land in an early-stage corridor has genuinely outrun the 25-year
+          metro-real-estate average lately — but it's the least liquid option here (no same-day exit), needs real
+          diligence (RERA, title, road width), and a single plot is a lumpy, undiversified bet. Equities and gold can be
+          sold in minutes and split into any amount; land can't. This isn't investment advice — think about how much of
+          your money you can afford to have illiquid for years, not just the return number.
+        </div>
+
+        <div class="invest-tool" id="investTool">
+          <h3>Run the numbers yourself</h3>
+          <p>Put in an amount and a time horizon, pick a land growth tier and a stock-market growth assumption, and see
+            both paths side by side — same ₹ amount, same years, two different assets. This opens on land's strongest
+            documented case for this belt; move either slider to test other scenarios.</p>
+          <div class="invest-grid">
+            <div>
+              <div class="invest-field">
+                <label for="invAmount">Amount to invest (₹)</label>
+                <input type="number" id="invAmount" value="500000" min="0" step="10000">
+              </div>
+              <div class="invest-field">
+                <label for="invYears">Holding period (years)</label>
+                <input type="number" id="invYears" value="5" min="1" max="25" step="1">
+              </div>
+            </div>
+            <div>
+              <div class="invest-field">
+                <label>Land growth assumption</label>
+                <div class="invest-chip-row" id="invLandChips">
+                  <div class="invest-chip" data-rate="6">Conservative · 6%</div>
+                  <div class="invest-chip" data-rate="12">Steady-high (Bihta tier) · 12%</div>
+                  <div class="invest-chip active-land" data-rate="20">Hyper-growth (Naubatpur tier) · 20%</div>
+                </div>
+              </div>
+              <div class="invest-field">
+                <label>Stock market assumption (Sensex-style)</label>
+                <div class="invest-chip-row" id="invStockChips">
+                  <div class="invest-chip active-stock" data-rate="10">Conservative · 10%</div>
+                  <div class="invest-chip" data-rate="15">25-yr historical avg · 15%</div>
+                  <div class="invest-chip" data-rate="18">Strong bull run · 18%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="invest-results">
+            <div class="invest-result-card" id="invLandCard">
+              <div class="ir-lab">Land — future value</div>
+              <div class="ir-figure" id="invLandFuture">₹0</div>
+              <div class="ir-sub" id="invLandSub">at 20%/yr over 5 years · illiquid, needs real diligence</div>
+            </div>
+            <div class="invest-result-card" id="invStockCard">
+              <div class="ir-lab">Stock market — future value</div>
+              <div class="ir-figure" id="invStockFuture">₹0</div>
+              <div class="ir-sub" id="invStockSub">at 10%/yr over 5 years · sellable in seconds, no site visits</div>
+            </div>
+          </div>
+          <div class="invest-winner-banner" id="invWinnerBanner">Enter your numbers above to compare.</div>
+          <div class="invest-context-note">
+            📍 <b>Why it opens here:</b> pockets like Naubatpur and the Bihta/IIT-Patna belt have documented 20–25%+
+            recent-year appreciation (see the growth tiers above) — genuinely ahead of long-run stock-market averages.
+            That's a real, sourced upper case for land in this specific corridor, not a claim that land always wins.
+            Drag the land chip down to 6% or push stocks up to 18% and the ranking can flip — that's the honest range,
+            both ways.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWS ================= -->
+    <section class="section-dark" id="news">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="eyebrow">Real estate, locally</div>
+          <h2 style="color:#fff">News that actually moves <em>these</em> localities.</h2>
+          <p style="color:#a9aac6">Curated, not scraped — updated by Township Capital as things happen.</p>
+        </div>
+        <div class="news-list" id="newsList"></div>
+      </div>
+    </section>
+
+    <!-- ================= CALCULATOR ================= -->
+    <section class="section-cream" id="calculator">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="eyebrow on-light">Plan ahead</div>
+          <h2>What could this plot be worth <em>later?</em></h2>
+          <p>Pick a project to autofill today's rate, or enter your own numbers. Not a valuation or a promise.</p>
+        </div>
+        <div class="calc-grid">
+          <div class="calc-card">
+            <div class="field">
+              <label for="calcProject">Quick-fill from a project</label>
+              <select id="calcProject">
+                <option value="custom">Custom — I'll enter my own</option>
+                <option value="ekma">Ekma City, Saran — ₹551/sq ft (launch)</option>
+                <option value="rajgir">Mountain Bliss, Rajgir — ₹950/sq ft</option>
+                <option value="bihta">Shuvida Enclave, Bihta — ₹1,499/sq ft</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="calcPrice">Price per sq ft (₹)</label>
+              <input type="number" id="calcPrice" value="950" min="0" step="1">
+            </div>
+            <div class="field">
+              <label for="calcArea">Plot area</label>
+              <div class="field-row">
+                <input type="number" id="calcArea" value="5" min="0" step="0.5">
+                <select id="calcAreaUnit" class="unit-select">
+                  <option value="katha">Katha</option>
+                  <option value="sqft">Sq ft</option>
+                  <option value="bigha">Bigha</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="calcYears">Holding period (years)</label>
+              <input type="number" id="calcYears" value="5" min="1" max="20" step="1">
+            </div>
+            <div class="field">
+              <label>Growth scenario</label>
+              <div class="scenario-row">
+                <div class="scenario-chip" data-rate="6">Conservative · 6%/yr</div>
+                <div class="scenario-chip active" data-rate="10">Moderate · 10%/yr</div>
+                <div class="scenario-chip" data-rate="15">Optimistic · 15%/yr</div>
+              </div>
+            </div>
+          </div>
+          <div class="result-card">
+            <div class="result-top">
+              <div class="lab">Estimated future value</div>
+              <div class="figure" id="resFuture">₹0</div>
+              <div class="sub" id="resSub">at 0%/yr over 0 years</div>
+              <div class="profit-line" id="resProfitPct">+0% estimated gain</div>
+            </div>
+            <div class="result-breakdown">
+              <div class="row"><span>Current value</span><span id="resCurrent">₹0</span></div>
+              <div class="row"><span>Absolute gain</span><span id="resGain">₹0</span></div>
+              <div class="row"><span>Effective multiple</span><span id="resMultiple">0.0×</span></div>
+            </div>
+            <div class="result-note">Uses simple compound growth on your chosen rate. Actual land prices move in jumps
+              tied to registry, infrastructure, and demand — not smoothly. Treat this as a planning estimate, not
+              investment advice.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="cta-final" id="contact">
+      <div class="wrap">
+        <div class="eyebrow">The next move is yours</div>
+        <h2>Good decisions start with a conversation.</h2>
+        <div class="cta-grid">
+          <div class="cta-left">
+            <p>Tell us what you're considering in Rajgir, Bihta, Ekma or Danapur. No scripts, no pressure — reach out
+              and we'll take it from there.</p>
+            <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+              <a class="btn btn-gold"
+                href="https://wa.me/917282817217?text=Hi%2C%20I%20am%20interested%20in%20your%20DNS%20Homes%20projects.%20Please%20share%20more%20details."
+                target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+              <a class="btn btn-outline" href="https://www.instagram.com/exclusive_home_realtor/" target="_blank"
+                rel="noopener">DM "PLOT" on Instagram →</a>
+            </div>
+          </div>
+          <form class="lead-form" id="leadForm">
+            <h3>Or send us your details</h3>
+            <div class="lf-sub">We'll open WhatsApp with your info filled in — just hit send.</div>
+            <div class="lf-field">
+              <label for="leadName">Your name</label>
+              <input type="text" id="leadName" required placeholder="e.g. Rohit Kumar">
+            </div>
+            <div class="lf-field">
+              <label for="leadPhone">Phone number</label>
+              <input type="tel" id="leadPhone" required placeholder="e.g. 98765 43210">
+            </div>
+            <div class="lf-field">
+              <label for="leadProject">Which project interests you?</label>
+              <select id="leadProject">
+                <option value="Ekma City, Saran">Ekma City, Saran</option>
+                <option value="Mountain Bliss, Rajgir">Mountain Bliss, Rajgir</option>
+                <option value="Shuvida Enclave, Bihta">Shuvida Enclave, Bihta</option>
+                <option value="Harmony Heights, Danapur (3BHK ₹35L offer)">Harmony Heights, Danapur (3BHK ₹35L offer)</option>
+                <option value="Not sure yet — need guidance">Not sure yet — need guidance</option>
+              </select>
+            </div>
+            <div class="lf-field">
+              <label for="leadMessage">Message (optional)</label>
+              <textarea id="leadMessage" placeholder="Any specific plot size, budget or timeline?"></textarea>
+            </div>
+            <button type="submit" class="lf-submit">💬 Send via WhatsApp</button>
+            <div class="lf-note">Opens WhatsApp with your details pre-filled — you send it, nothing is submitted
+              automatically.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap foot-row">
+      <div>© 2026 Township Capital · Marketing partner for DNS Homes Pvt Ltd</div>
+      <div class="foot-links">
+        <a href="#projects">Projects</a>
+        <a href="#harmony-heights">Harmony Heights</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#compare">Compare</a>
+        <a href="#news">News</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const WA_NUMBER = '917282817217'; // primary WhatsApp number, no + or spaces
+
+    /* ============================================================
+       LEAD FORM — builds a WhatsApp message from the form fields
+       ============================================================ */
+    const leadForm = document.getElementById('leadForm');
+    if (leadForm) {
+      leadForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('leadName').value.trim();
+        const phone = document.getElementById('leadPhone').value.trim();
+        const project = document.getElementById('leadProject').value;
+        const message = document.getElementById('leadMessage').value.trim();
+
+        let text = `Hi, I'm ${name} (${phone}). I'm interested in ${project}.`;
+        if (message) { text += ` ${message}`; }
+
+        const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+        window.open(url, '_blank', 'noopener');
+      });
+    }
+
+    /* ============================================================
+       MOBILE NAV TOGGLE
+       ============================================================ */
+    const navToggle = document.getElementById('navToggle');
+    const navLinksEl = document.getElementById('navLinks');
+    if (navToggle && navLinksEl) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+      navLinksEl.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          navLinksEl.classList.remove('mobile-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    /* ============================================================
+       REAL PROJECT DATA — from DNS Homes project material (Aug 2026)
+       Katha conversion: Patna/Magadh standard, 1 katha = 1,361.25 sq ft
+       ============================================================ */
+    const SQFT_PER_KATHA = 1361.25;
+
+    const ekmaRate = 551; // ₹ per sq ft, launch rate — rises to 700 on 1 Sept 2026
+    const rajgirRate = 950; // ₹ per sq ft, effective 1 Jul 2026
+    const bihtaRate = 1499; // ₹ per sq ft, current
+
+    const ekmaPlots = [
+      { code: 'E', size: 1000 },
+      { code: 'D', size: 1200 },
+      { code: 'C', size: 1800 },
+      { code: 'B', size: 2200 },
+      { code: 'A', size: 2400 },
+    ];
+    const rajgirPlots = [
+      { code: 'H', size: 600 },
+      { code: 'G', size: 900 },
+      { code: 'C', size: 1200 },
+      { code: 'B', size: 1800 },
+      { code: 'A', size: 2400 },
+      { code: 'D', size: 3000 },
+    ];
+    const bihtaPlots = [
+      { size: 1000 },
+      { size: 1200 },
+      { size: 2400 },
+      { size: 3600 },
+    ];
+
+    let horizonYears = 5;
+    let horizonRate = 10;
+
+    function fmtRupees(n) {
+      if (n >= 10000000) return '₹' + (n / 10000000).toFixed(2) + ' Cr';
+      if (n >= 100000) return '₹' + (n / 100000).toFixed(2) + ' L';
+      return '₹' + Math.round(n).toLocaleString('en-IN');
+    }
+
+    function renderPriceTable(bodyId, plots, ratePerSqft) {
+      const body = document.getElementById(bodyId);
+      body.innerHTML = plots.map(p => {
+        const current = p.size * ratePerSqft;
+        const future = current * Math.pow(1 + horizonRate / 100, horizonYears);
+        const gainPct = ((future / current - 1) * 100).toFixed(0);
+        const label = p.code ? `${p.size.toLocaleString('en-IN')} sq ft (Type ${p.code})` : `${p.size.toLocaleString('en-IN')} sq ft`;
+        return `<tr>
+      <td>${label}</td>
+      <td class="num">${fmtRupees(current)}</td>
+      <td class="num">${fmtRupees(future)}</td>
+      <td><span class="profit-badge">↑ ${gainPct}% · ${fmtRupees(future - current)}</span></td>
+    </tr>`;
+      }).join('');
+    }
+
+    function renderAllPriceTables() {
+      renderPriceTable('ekmaPriceBody', ekmaPlots, ekmaRate);
+      renderPriceTable('rajgirPriceBody', rajgirPlots, rajgirRate);
+      renderPriceTable('bihtaPriceBody', bihtaPlots, bihtaRate);
+    }
+
+    document.getElementById('horizonChips').addEventListener('click', e => {
+      const chip = e.target.closest('.chip');
+      if (!chip) return;
+      document.querySelectorAll('#horizonChips .chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      horizonYears = parseFloat(chip.dataset.years);
+      renderAllPriceTables();
+    });
+    document.getElementById('rateChips').addEventListener('click', e => {
+      const chip = e.target.closest('.chip');
+      if (!chip) return;
+      document.querySelectorAll('#rateChips .chip').forEach(c => c.classList.remove('active', 'gold-active'));
+      chip.classList.add('active', 'gold-active');
+      horizonRate = parseFloat(chip.dataset.rate);
+      renderAllPriceTables();
+    });
+    renderAllPriceTables();
+
+    /* ============================================================
+       COMPARE — Rajgir, Bihta & Ekma verified from project data,
+       others indicative for context. Edit freely.
+       ============================================================ */
+    const ekmaPerKatha = ekmaRate * SQFT_PER_KATHA / 100000; // in Lakh
+    const rajgirPerKatha = rajgirRate * SQFT_PER_KATHA / 100000; // in Lakh
+    const bihtaPerKatha = bihtaRate * SQFT_PER_KATHA / 100000; // in Lakh
+
+    const compareData = {
+      all: [
+        { name: 'Ekma', sub: 'Ekma City, per katha (launch rate)', value: ekmaPerKatha, verified: true },
+        { name: 'Rajgir', sub: 'Mountain Bliss, per katha', value: rajgirPerKatha, verified: true },
+        { name: 'Bihta', sub: 'Shuvida Enclave, per katha', value: bihtaPerKatha, verified: true },
+        { name: 'Bihar Sharif', sub: 'district town (indicative)', value: 19 },
+        { name: 'Nalanda town', sub: 'university belt (indicative)', value: 15 },
+        { name: 'Patna outskirts', sub: 'reference (indicative)', value: 52 },
+      ]
+    };
+
+    function fmtLakh(v) { return '₹' + v.toFixed(1).replace(/\.0$/, '') + 'L'; }
+
+    function renderCompare(filter) {
+      const rows = compareData[filter] || compareData.all;
+      const max = Math.max(...rows.map(r => r.value));
+      const panel = document.getElementById('comparePanel');
+      panel.innerHTML = rows.map(r => `
+    <div class="bar-row">
+      <div class="bar-label">${r.name}<span class="sub">${r.sub}</span></div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(r.value / max * 100).toFixed(0)}%"></div></div>
+      <div class="bar-value">${fmtLakh(r.value)}/katha ${r.verified ? '<span class="verified-pill">Verified</span>' : ''}</div>
+    </div>
+  `).join('');
+    }
+    document.querySelectorAll('.toggle-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderCompare(btn.dataset.filter);
+      });
+    });
+    renderCompare('all');
+
+    /* ============================================================
+       TRENDS — illustrative index, edit with real historical
+       prices as you collect them.
+       ============================================================ */
+    const trendData = {
+      years: [2021, 2022, 2023, 2024, 2025, 2026],
+      series: [
+        { name: 'Rajgir', color: '#D4AF37', values: [100, 112, 126, 148, 168, 184] },
+        { name: 'Bihta', color: '#a05a2c', values: [100, 108, 119, 134, 152, 171] },
+        { name: 'Ekma / Saran', color: '#5b7a5e', values: [100, 102, 105, 109, 118, 133] },
+        { name: 'Bihar Sharif', color: '#c9c4b0', values: [100, 104, 109, 114, 119, 124] },
+      ]
+    };
+
+    function renderTrend() {
+      const svg = document.getElementById('trendSvg');
+      const W = 900, H = 320, padL = 40, padR = 20, padT = 20, padB = 40;
+      const years = trendData.years;
+      const allVals = trendData.series.flatMap(s => s.values);
+      const minV = Math.min(...allVals) - 10, maxV = Math.max(...allVals) + 10;
+      const x = i => padL + (i / (years.length - 1)) * (W - padL - padR);
+      const y = v => H - padB - ((v - minV) / (maxV - minV)) * (H - padT - padB);
+
+      let svgHtml = '';
+      for (let i = 0; i < years.length; i++) {
+        svgHtml += `<line x1="${x(i)}" y1="${padT}" x2="${x(i)}" y2="${H - padB}" stroke="#eee7d4" stroke-width="1"/>`;
+        svgHtml += `<text x="${x(i)}" y="${H - padB + 22}" font-size="11" fill="#9a9585" text-anchor="middle" font-family="Inter, sans-serif">${years[i]}</text>`;
+      }
+      trendData.series.forEach(s => {
+        const pts = s.values.map((v, i) => `${x(i)},${y(v)}`).join(' ');
+        svgHtml += `<polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`;
+        s.values.forEach((v, i) => {
+          svgHtml += `<circle cx="${x(i)}" cy="${y(v)}" r="4" fill="${s.color}"/>`;
+        });
+      });
+      svg.innerHTML = svgHtml;
+    }
+    renderTrend();
+
+    /* ============================================================
+       LAND vs STOCK MARKET — interactive comparison tool
+       ============================================================ */
+    let invLandRate = 20;
+    let invStockRate = 10;
+
+    function calcInvest() {
+      const amount = parseFloat(document.getElementById('invAmount').value) || 0;
+      const years = parseFloat(document.getElementById('invYears').value) || 0;
+
+      const landFuture = amount * Math.pow(1 + invLandRate / 100, years);
+      const stockFuture = amount * Math.pow(1 + invStockRate / 100, years);
+
+      document.getElementById('invLandFuture').textContent = fmtRupees(landFuture);
+      document.getElementById('invStockFuture').textContent = fmtRupees(stockFuture);
+      document.getElementById('invLandSub').textContent = `at ${invLandRate}%/yr over ${years} year${years == 1 ? '' : 's'} · illiquid, needs real diligence`;
+      document.getElementById('invStockSub').textContent = `at ${invStockRate}%/yr over ${years} year${years == 1 ? '' : 's'} · sellable in seconds, no site visits`;
+
+      const landCard = document.getElementById('invLandCard');
+      const stockCard = document.getElementById('invStockCard');
+      landCard.classList.remove('leader');
+      stockCard.classList.remove('leader');
+      const banner = document.getElementById('invWinnerBanner');
+
+      if (amount <= 0 || years <= 0) {
+        banner.textContent = 'Enter your numbers above to compare.';
+        return;
+      }
+
+      const diff = Math.abs(landFuture - stockFuture);
+      if (landFuture > stockFuture) {
+        landCard.classList.add('leader');
+        banner.textContent = `At these assumptions, land comes out ahead by ${fmtRupees(diff)} over ${years} year${years == 1 ? '' : 's'} — but it's the less liquid choice, needs real diligence (RERA, title, road width), and this uses an assumed rate, not a guarantee.`;
+      } else if (stockFuture > landFuture) {
+        stockCard.classList.add('leader');
+        banner.textContent = `At these assumptions, the stock market comes out ahead by ${fmtRupees(diff)} over ${years} year${years == 1 ? '' : 's'} — and it can be exited any time, unlike a plot. Markets are also more volatile year to year than this smooth curve suggests.`;
+      } else {
+        banner.textContent = `At these assumptions, both paths land at roughly the same value — liquidity, volatility and diversification become the real tie-breaker, not the return number alone.`;
+      }
+    }
+
+    document.getElementById('invLandChips').addEventListener('click', e => {
+      const chip = e.target.closest('.invest-chip');
+      if (!chip) return;
+      document.querySelectorAll('#invLandChips .invest-chip').forEach(c => c.classList.remove('active-land'));
+      chip.classList.add('active-land');
+      invLandRate = parseFloat(chip.dataset.rate);
+      calcInvest();
+    });
+    document.getElementById('invStockChips').addEventListener('click', e => {
+      const chip = e.target.closest('.invest-chip');
+      if (!chip) return;
+      document.querySelectorAll('#invStockChips .invest-chip').forEach(c => c.classList.remove('active-stock'));
+      chip.classList.add('active-stock');
+      invStockRate = parseFloat(chip.dataset.rate);
+      calcInvest();
+    });
+    ['invAmount', 'invYears'].forEach(id => {
+      document.getElementById(id).addEventListener('input', calcInvest);
+    });
+    calcInvest();
+
+    /* ============================================================
+       NEWS — curated, based on real project & infra details
+       ============================================================ */
+    const newsData = [
+      { date: 'New launch', tag: 'Flats launch', title: 'Harmony Heights launches in Danapur — 3 BHK at ₹35L for first 50 flats', body: 'DNS Homes has entered the flats market with Harmony Heights on Danapur-Bihta Road — a G+8 gated community with a clubhouse, pool and gym, offering a 3 BHK at ₹35L on a one-time-payment basis for the first 50 flats booked. Completion is targeted for 2030.' },
+      { date: 'New launch', tag: 'Launch offer', title: 'Ekma City launches in Saran — from ₹551/sq ft', body: 'DNS Homes has opened its newest township, Ekma City, on Ekma Mushraf Road in Saran — 51.76 bigha, wide 30–35 ft roads, parks, a temple and kids\' play area, at a launch rate of ₹551/sq ft.' },
+      { date: '2025–26', tag: 'Corridor plan', title: 'Ekma–Chapra named in Bihar\'s special area development plan', body: 'The Ekma–Chapra belt is being developed as an agri-processing hub, educational zone and commercial district — the kind of tier-3 corridor plan that has historically preceded faster price growth in similar Bihar pockets.' },
+      { date: 'Under construction', tag: 'Infrastructure', title: 'NH-131G to link Saran directly into the Patna Ring Road', body: 'The upcoming 6-lane NH-131G spur connects Dighwara (Saran district) to Ramnagar (Patna district), tying Ekma/Chapra into the same ring-road network driving growth in Bihta and Naubatpur.' },
+      { date: '1 Sept 2026', tag: 'Price update', title: 'Ekma City rate rises to ₹700/sq ft after 30 Aug', body: 'The launch offer at Ekma City closes 30 August 2026 — bookings from 1 September move to ₹700/sq ft, a confirmed ~27% step up from the current rate.' },
+      { date: '1 Jul 2026', tag: 'Price update', title: 'Mountain Bliss revises rate to ₹950/sq ft', body: 'DNS Homes has updated Mountain Bliss (Saifabad, Rajgir) pricing to ₹950/sq ft effective 1 July 2026 — plan around the new rate for upcoming bookings.' },
+      { date: '2026', tag: 'Master Plan', title: 'Greater Patna Authority formed to decongest the capital', body: 'Bihar has expanded urban planning across 14 blocks and 4 subdivisions — including Bihta, Danapur, Naubatpur and Maner — under the Patna Master Plan 2031, pulling Shuvida Enclave and Harmony Heights into an actively-planned growth zone.' },
+      { date: 'Recent revision', tag: 'Circle rates', title: 'Government floor prices jump 60–100% in expansion zones', body: 'Bihar\'s Minimum Value Register (MVR) saw urban and peripheral circle rates roughly double in the latest revision, with rural expansion belts up 60% — plus a new mandatory 5% compounding increase every year going forward.' },
+      { date: 'Current', tag: 'Connectivity', title: 'Shuvida Enclave sits 5 minutes from IIT Patna', body: 'Bihta\'s Shuvida Enclave is 5 minutes from IIT Patna and its bus stand, 7 minutes from Bihta railway station, and 10 minutes from the international airport.' },
+      { date: 'Upcoming', tag: 'Infrastructure', title: 'Bihta Civil Enclave Airport and elevated corridor in the works', body: 'The Bihta Air Force Station is being developed into a commercial airport, and the planned Danapur–Bihta elevated corridor is expected to cut travel time to core Patna to under 30 minutes — directly benefiting Harmony Heights\' Danapur location too.' },
+      { date: '2024', tag: 'Sports & Tourism', title: 'Rajgir Sports Complex live, cricket stadium underway', body: 'The 90+ acre sports complex opened in 2024; the adjoining international cricket stadium (40–50k capacity) is under construction next to Mountain Bliss.' },
+    ];
+
+    function renderNews() {
+      const list = document.getElementById('newsList');
+      list.innerHTML = newsData.map(n => `
+    <div class="news-item">
+      <div class="news-date">${n.date}</div>
+      <div>
+        <div class="news-tag">${n.tag}</div>
+        <h3>${n.title}</h3>
+        <p>${n.body}</p>
+      </div>
+      <div class="news-arrow">↗</div>
+    </div>
+  `).join('');
+    }
+    renderNews();
+
+    /* ============================================================
+       CALCULATOR
+       ============================================================ */
+    const areaToSqft = { katha: SQFT_PER_KATHA, sqft: 1, bigha: SQFT_PER_KATHA * 20 };
+    let selectedRate = 10;
+
+    document.getElementById('calcProject').addEventListener('change', (e) => {
+      const val = e.target.value;
+      if (val === 'ekma') document.getElementById('calcPrice').value = ekmaRate;
+      if (val === 'rajgir') document.getElementById('calcPrice').value = rajgirRate;
+      if (val === 'bihta') document.getElementById('calcPrice').value = bihtaRate;
+      calc();
+    });
+
+    document.querySelectorAll('.scenario-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('.scenario-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        selectedRate = parseFloat(chip.dataset.rate);
+        calc();
+      });
+    });
+
+    function calc() {
+      const priceSqft = parseFloat(document.getElementById('calcPrice').value) || 0;
+      const areaVal = parseFloat(document.getElementById('calcArea').value) || 0;
+      const areaUnit = document.getElementById('calcAreaUnit').value;
+      const years = parseFloat(document.getElementById('calcYears').value) || 0;
+
+      const areaSqft = areaVal * areaToSqft[areaUnit];
+      const currentTotal = priceSqft * areaSqft;
+      const future = currentTotal * Math.pow(1 + selectedRate / 100, years);
+      const gain = future - currentTotal;
+      const multiple = currentTotal > 0 ? future / currentTotal : 0;
+      const gainPct = currentTotal > 0 ? (gain / currentTotal * 100) : 0;
+
+      document.getElementById('resFuture').textContent = fmtRupees(future);
+      document.getElementById('resSub').textContent = `at ${selectedRate}%/yr over ${years} year${years == 1 ? '' : 's'}`;
+      document.getElementById('resProfitPct').textContent = `+${gainPct.toFixed(0)}% estimated gain`;
+      document.getElementById('resCurrent').textContent = fmtRupees(currentTotal);
+      document.getElementById('resGain').textContent = fmtRupees(gain);
+      document.getElementById('resMultiple').textContent = multiple.toFixed(2) + '×';
+    }
+
+    ['calcPrice', 'calcArea', 'calcAreaUnit', 'calcYears'].forEach(id => {
+      document.getElementById(id).addEventListener('input', calc);
+      document.getElementById(id).addEventListener('change', calc);
+    });
+    calc();
+
+    /* ============================================================
+       FULL-PAYMENT RENTAL PLAN — 1%/month credit on full payment
+       (documented on Ekma City & Mountain Bliss booking plans)
+       ============================================================ */
+    const RENTAL_MONTHLY_RATE = 0.01; // 1% per month, as stated in project material
+    let rentalMonths = 24;
+
+    // Months remaining from today through 31 Dec 2030 (dynamic, not hardcoded)
+    function monthsToEnd2030() {
+      const now = new Date();
+      const end = new Date(2030, 11, 31); // 31 Dec 2030
+      let months = (end.getFullYear() - now.getFullYear()) * 12 + (end.getMonth() - now.getMonth());
+      if (now.getDate() > 1) months += 1; // count the current partial month too
+      return Math.max(months, 0);
+    }
+
+    function calcRental() {
+      const amount = parseFloat(document.getElementById('rentalAmount').value) || 0;
+      const monthlyCredit = amount * RENTAL_MONTHLY_RATE;
+      const totalOverPeriod = monthlyCredit * rentalMonths;
+
+      document.getElementById('rentalMonthly').textContent = fmtRupees(monthlyCredit);
+      document.getElementById('rentalMonthlySub').textContent = `1% of ${fmtRupees(amount)} paid in full`;
+      document.getElementById('rentalPrincipal').textContent = fmtRupees(amount);
+      document.getElementById('rentalTotal').textContent = `${fmtRupees(totalOverPeriod)} (over ${rentalMonths} months)`;
+
+      // ---- 2030 example callout ----
+      const m2030 = monthsToEnd2030();
+      const cashBack2030 = monthlyCredit * m2030;
+      const pctBack = amount > 0 ? (cashBack2030 / amount * 100) : 0;
+
+      document.getElementById('e30CashBack').textContent = fmtRupees(cashBack2030);
+      document.getElementById('e30CashSub').textContent = `1%/month × ${m2030} months to Dec 2030`;
+      document.getElementById('e30LandValue').textContent = fmtRupees(amount);
+      document.getElementById('e30Pct').textContent = `${pctBack.toFixed(0)}%`;
+    }
+
+    document.getElementById('rentalMonthsChips').addEventListener('click', e => {
+      const chip = e.target.closest('.scenario-chip');
+      if (!chip) return;
+      document.querySelectorAll('#rentalMonthsChips .scenario-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      rentalMonths = parseFloat(chip.dataset.months);
+      calcRental();
+    });
+    document.getElementById('rentalAmount').addEventListener('input', calcRental);
+    calcRental();
+  </script>
+</body>
+
+</html>
