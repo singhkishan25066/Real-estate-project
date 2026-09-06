@@ -1,0 +1,108 @@
+// Township Capital — Tailwind CDN configuration
+// Must load AFTER the Tailwind CDN <script> tag and BEFORE any markup
+// that relies on these utility classes being generated.
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface-container-low": "#f6f3ec",
+        "secondary": "#9c4329",
+        "on-error": "#ffffff",
+        "on-secondary-fixed": "#3b0900",
+        "background": "#fcf9f2",
+        "inverse-surface": "#31312c",
+        "surface-container-highest": "#e5e2db",
+        "on-tertiary": "#ffffff",
+        "on-background": "#1c1c18",
+        "tertiary": "#000000",
+        "on-secondary": "#ffffff",
+        "tertiary-fixed-dim": "#f0bf5c",
+        "surface-bright": "#fcf9f2",
+        "on-primary": "#ffffff",
+        "primary-fixed": "#e1e1f7",
+        "on-primary-container": "#818296",
+        "on-surface": "#1c1c18",
+        "outline": "#77767d",
+        "surface-container-high": "#ebe8e1",
+        "primary-container": "#191a2a",
+        "on-secondary-container": "#762710",
+        "on-surface-variant": "#46464c",
+        "tertiary-fixed": "#ffdea4",
+        "error-container": "#ffdad6",
+        "on-tertiary-fixed-variant": "#5d4200",
+        "outline-variant": "#c7c5cd",
+        "tertiary-container": "#261900",
+        "surface-variant": "#e5e2db",
+        "surface-dim": "#dcdad3",
+        "error": "#ba1a1a",
+        "on-error-container": "#93000a",
+        "secondary-fixed": "#ffdbd1",
+        "surface-container-lowest": "#ffffff",
+        "surface-tint": "#5c5d6f",
+        "primary-fixed-dim": "#c4c5da",
+        "secondary-container": "#ff8f70",
+        "on-tertiary-fixed": "#261900",
+        "inverse-primary": "#c4c5da",
+        "inverse-on-surface": "#f3f0ea",
+        "on-primary-fixed-variant": "#444657",
+        "on-primary-fixed": "#191a2a",
+        "surface": "#fcf9f2",
+        "surface-container": "#f0eee7",
+        "secondary-fixed-dim": "#ffb5a0",
+        "on-tertiary-container": "#a77d1f",
+        "primary": "#000000",
+        "on-secondary-fixed-variant": "#7d2c14"
+      },
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        lg: "0.5rem",
+        xl: "0.75rem",
+        full: "9999px"
+      },
+      spacing: {
+        "grid-margin-tablet": "2rem",
+        "space-md": "1rem",
+        "space-3xl": "6rem",
+        "grid-margin-desktop": "4rem",
+        "grid-margin-mobile": "1.25rem",
+        "space-xs": "0.5rem",
+        "space-sm": "0.75rem",
+        "gutter-mobile": "1rem",
+        "space-2xl": "4rem",
+        "space-lg": "1.5rem",
+        "gutter-desktop": "2rem",
+        "space-xl": "2.5rem",
+        "space-2xs": "0.25rem"
+      },
+      fontFamily: {
+        "headline-lg-mobile": ["Playfair Display"],
+        "headline-sm": ["Newsreader"],
+        "headline-lg": ["Playfair Display"],
+        "display-xl": ["Playfair Display"],
+        "legal-micro": ["Inter"],
+        "body-sm": ["Inter"],
+        "display-xl-mobile": ["Playfair Display"],
+        "headline-md": ["Playfair Display"],
+        "data-metric": ["Inter"],
+        "label-caps": ["Inter"],
+        "body-lg": ["Newsreader"],
+        "body-md": ["Newsreader"]
+      },
+      fontSize: {
+        "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "500" }],
+        "headline-sm": ["22px", { lineHeight: "30px", letterSpacing: "0em", fontWeight: "600" }],
+        "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.015em", fontWeight: "500" }],
+        "display-xl": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "600" }],
+        "legal-micro": ["10px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "400" }],
+        "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "400" }],
+        "display-xl-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "600" }],
+        "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "0em", fontWeight: "500" }],
+        "data-metric": ["14px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "500" }],
+        "label-caps": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "600" }],
+        "body-lg": ["19px", { lineHeight: "30px", letterSpacing: "-0.005em", fontWeight: "400" }],
+        "body-md": ["16px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "400" }]
+      }
+    }
+  }
+};

@@ -1,0 +1,118 @@
+/* =========================================================
+   Township Capital — Consolidated Stylesheet
+   Extracted from inline <style> blocks in the original HTML
+   ========================================================= */
+
+/* --- Commute animation (flow lines + beacon pulses on the map) --- */
+@keyframes commuteFlowPulse {
+  from {
+    stroke-dashoffset: 28;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes commuteGlowBlink {
+
+  0%,
+  100% {
+    opacity: 0.95;
+    filter: drop-shadow(0 0 6px rgba(156, 67, 41, 0.85));
+  }
+
+  50% {
+    opacity: 0.35;
+    filter: drop-shadow(0 0 2px rgba(156, 67, 41, 0.2));
+  }
+}
+
+.commute-flow-line {
+  stroke-dasharray: 8 6;
+  animation: commuteFlowPulse 1.2s linear infinite;
+}
+
+.commute-beacon-pulse {
+  animation: commuteGlowBlink 1.6s ease-in-out infinite;
+}
+
+/* --- Base layout resets --- */
+@layer base {
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  main>:first-child {
+    margin-top: 0 !important;
+  }
+
+  main>:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* --- Corridor ledger <-> map sync highlighting --- */
+.ledger-highlight {
+  background-color: #fcf9f2 !important;
+  border-left: 3px solid #9c4329 !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ledger-dimmed {
+  opacity: 0.38;
+}
+
+/* --- Map pan/zoom viewport + spotlight interactions --- */
+#cadastral-viewport-layer {
+  transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+  transform-origin: 440px 250px;
+}
+
+.node-active-spotlight {
+  transform-box: fill-box;
+  transform-origin: center;
+  filter: drop-shadow(0 0 10px rgba(156, 67, 41, 0.9));
+  animation: spotlight-pulse 1.8s infinite alternate;
+}
+
+@keyframes plotSpotlightScale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.6);
+  }
+
+  100% {
+    transform: scale(1.35);
+  }
+}
+
+@keyframes spotlight-pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.map-dimmed-element {
+  opacity: 0.22 !important;
+  transition: opacity 0.4s ease, opacity 0.5s ease;
+}
